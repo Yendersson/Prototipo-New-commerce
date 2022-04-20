@@ -42,26 +42,30 @@
 
 
 
-/* =================================== GENERAL =================================== */
+/* =================================== UNIVERSAL =================================== */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =================================== HTML =================================== */
 html {
     font-family: "Poppins", sans-serif;
     overscroll-behavior: contain;
 }
 
+/* =================================== LINKS =================================== */
 a {
     text-decoration: none; 
 }
 
+/* =================================== LIST =================================== */
 li {
     list-style: none; 
 }
 
+/* =================================== BUTTONS =================================== */
 button {
     background: none;
     font: inherit;
@@ -69,20 +73,24 @@ button {
     cursor: pointer;
 }
 
+/* =================================== IMAGES, ICONS, BUTTON & LINKS =================================== */
 img, ion-icon, button, a {
     display: block; 
 }
 
+/* =================================== IMAGENES, ICON, BUTTON & LINKS =================================== */
 span {
     display: inline-block; 
 }
 
+/* =================================== FORM =================================== */
 input {
     display: block;
     width: 100%;
     font: inherit;
 }
 
+/* =================================== FORM TEXT PROVISIONAL =================================== */
 input::placeholder {
     font: inherit; 
 }
