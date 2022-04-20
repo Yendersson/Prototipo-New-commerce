@@ -961,3 +961,99 @@ footer {
     }
 
 }
+
+
+
+
+/************************************
+esto es main de productos*/
+
+
+/*+++++++++ mobile ++++++++*/
+main{
+    box-sizing: border-box;
+    height: 100vh;
+    background: rgba(255, 181, 82,0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.container-main{ 
+    width: 90%;
+    border: 1px solid black;
+    margin: .3rem;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+
+
+.container-producto{
+    width: 100%; 
+    border: 1px solid black;
+}
+
+.div-images{
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    
+}
+.div-img{
+    height: 100%;
+    border: 1px solid black;
+   height: 80%;
+}
+
+
+.div-galery{
+    border: 1px solid black;
+    display: inline-flex;
+}
+
+
+.img-min{
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+
+
+.container-compra{
+    border: 1px solid black;
+}
+
+
+.informacion-compra{
+    border: 1px solid black;
+    display: block;
+}
+
+.nombre-producto{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.valor-producto{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.description-producto{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.agregar-en-carrito{
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.agrega-al-carrito{
+    margin: .2em;
+   background: #FF7D1B;
+   border-radius: 1.5em;
+}
