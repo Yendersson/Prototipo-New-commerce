@@ -643,10 +643,8 @@ footer {
 @media (min-width: 1024px) {
 
     main{
-        min-width: 90%;
         margin: 20px auto;
         background-color: white;
-        height: 100vh;
     }
 
     :root {
@@ -971,89 +969,99 @@ esto es main de productos*/
 
 /*+++++++++ mobile ++++++++*/
 main{
-    box-sizing: border-box;
-    height: 100vh;
     background: rgba(255, 181, 82,0.3);
     display: flex;
     justify-content: center;
 }
 
 .container-main{ 
-    width: 90%;
-    border: 1px solid black;
-    margin: .3rem;
-    display: flex;
-    justify-content:center;
-    text-align: center;
+    width: 90%; 
+    margin-bottom: 3rem;
 }
 
 
 .container-producto{
-    width: 100%; 
-    border: 1px solid black;
+    margin-top: 2em; 
+
 }
 
-.div-images{
-    height: 50%;
-    width: 100%;
-    border: 1px solid black;
-    
-}
+
 .div-img{
-    height: 100%;
-    border: 1px solid black;
-   height: 80%;
+    text-align: center;
 }
+
+ .img-principal{
+   display: inline;
+    max-height: 300px;
+ }
 
 
 .div-galery{
-    border: 1px solid black;
-    display: inline-flex;
-}
-
-
-.img-min{
-    border: 1px solid black;
-    height: auto;
-    width: auto;
-}
-
-
-.container-compra{
-    border: 1px solid black;
-}
-
-
-.informacion-compra{
-    border: 1px solid black;
-    display: block;
-}
-
-.nombre-producto{
-    border: 1px solid black;
-    width: 100%;
-}
-
-.valor-producto{
-    border: 1px solid black;
-    width: 100%;
-}
-
-.description-producto{
-    border: 1px solid black;
-    width: 100%;
-}
-
-.agregar-en-carrito{
-    border: 1px solid black;
-    height: 50px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.agrega-al-carrito{
-    margin: .2em;
-   background: #FF7D1B;
-   border-radius: 1.5em;
+
+.img-min{
+    margin: .3em ; 
 }
+
+.img-min >img{
+    width: 2em;
+}
+
+.container-compra{
+    text-align: center
+}
+
+.container-compra > .informacion-compra > div > p {
+    margin: 1em 0 1em 0;
+}
+
+
+.agrega-al-carrito{
+    display: inline;
+    background: #FF7D1B;
+    border-radius: 1.5em; 
+    padding: .6em;
+   
+} 
+
+
+@media (min-width: 570px) {
+
+   /* ========================== MAIN PRODUCTOS====================== */
+    .container-compra{
+        padding: 5em 0 0em 0;
+    }
+    .img-principal {
+        max-height: 500px;}
+        
+        
+        .img-min >img{
+            width: 4em;
+        }
+    
+}
+
+
+
+@media (min-width: 1024px){
+        .container-producto{
+            display: flex; 
+        }
+        .img-principal {
+            max-height: 600px;}
+            .container-compra{
+                margin: 4em;
+            }
+            
+}
+
+
+@media (min-width: 1200px){
+     .img-principal {
+      max-height: 700px;}  
+    
+    
+}  
