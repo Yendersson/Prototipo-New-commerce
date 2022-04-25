@@ -87,9 +87,9 @@ input::placeholder {
     font: inherit; 
 }
 
-body {
+/* body {
     background: var(--white); 
-}
+} */
 
 /* =================================== SCROLL-BAR STYLES =================================== */
 body::-webkit-scrollbar {
@@ -645,8 +645,8 @@ footer {
     main{
         min-width: 90%;
         margin: 20px auto;
-        background-color: white;
-        height: 100vh;
+        /* background-color: white; */
+        /* height: 100vh; */
     }
 
     :root {
