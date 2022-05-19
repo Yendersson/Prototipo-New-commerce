@@ -581,6 +581,7 @@ footer {
     .header-search-container {
         min-width: 300px; 
     }
+
 }
 
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 768PX =================================== */
@@ -642,12 +643,10 @@ footer {
   
 @media (min-width: 1024px) {
 
-    main{
-        min-width: 90%;
+   /*  main{
         margin: 20px auto;
         background-color: white;
-        height: 100vh;
-    }
+    } */
 
     :root {
 
@@ -958,6 +957,157 @@ footer {
 
     .container {
         max-width: 1350px; 
+    }
+
+}
+
+
+
+
+/************************************
+esto es main de productos*/
+
+
+/*+++++++++ mobile ++++++++*/
+
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+	
+
+
+.headerCarrito{
+    height: 100px;
+    background-color: orange;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 1px 1px orangered;
+    margin: .7em;
+}
+
+main{
+    margin: 2em auto;
+}
+
+
+body{
+    background-color: rgba(86, 86, 84, 0.571);
+}
+
+.containerCarrito{
+    padding:1em ;
+    background-color: rgba(240, 248, 255, 0.2);
+}
+.imgCarrito{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+.eliminar{
+    width : 40px ;
+     height : 40px ;
+     border: 1px solid rgba(255, 68, 0, 0.279);
+    
+}
+
+.cart-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    background-color: rgb(245, 201, 119); border-radius: 1em;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+
+
+#prueba-producto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    background-color: rgb(245, 201, 119); border-radius: 1em;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+
+
+#segunda-columna{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    background-color: rgb(245, 201, 119); border-radius: 1em;
+    box-shadow: 1px 1px 1px 1px orangered;
+}
+
+#final{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1em;
+    box-shadow: 1px 1px 1px 1px orangered;
+    border-radius:1em ;
+}
+
+.btnCarrito{
+    border-style: hidden;
+    background-color: #4CAF50; /* Green */
+    border-radius: .6em;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .headerCarrito{
+        font-size: .8em;
+        height: 75px;
+    }
+}
+
+@media (max-width: 500px){
+  
+
+    .headerCarrito{
+        font-size: .6em;
+        height: 70px;
+    }
+
+
+    .imgCarrito,.eliminar{
+        height: 30px;
+        width: 30px;
+    }
+
+    #final{
+        display: grid;
+        justify-content: flex-start;
+        padding: .5em;
+        height: 220px;
+    }
+
+    .cart-column{
+        height: 3em;
+    }
+
+
+    #prueba-producto{
+        height: 3em;
+    }
+
+
+    #segunda-columna{
+        height: 3em;
     }
 
 }
