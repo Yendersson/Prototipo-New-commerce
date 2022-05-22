@@ -21,7 +21,7 @@ xhr2.addEventListener('load', ()=>{
 let xhr3 = ajax('vistas/home.html');
 xhr3.addEventListener('load', ()=>{
     xhr3.status == 200? _main.innerHTML = xhr3.response: console.log('error')
-    history.pushState('','', 'home.html')
+    // history.pushState('','', 'home.html')
 })
 
 console.log(location.pathname.slice(10));
@@ -93,7 +93,7 @@ function ajax(url, method = 'get'){
 console.log(location.pathname)
 function historial(){
     window.addEventListener('popstate', ()=>{
-    let historialBack = 'vistas/' + location.pathname.slice(10);
+    let historialBack = 'vistas/'+ location.pathname;
     let xhrHistorial = ajax(historialBack)
     xhrHistorial.addEventListener('load', ()=>{
         xhrHistorial.status == 200? _main.innerHTML = xhrHistorial.response: console.log('error');
