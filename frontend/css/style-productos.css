@@ -1,0 +1,132 @@
+/************************************
+esto es main de productos*/
+
+
+/*+++++++++ mobile ++++++++*/
+.main-productos{
+    /* background: rgba(255, 181, 82,0.3); */
+    display: flex;
+    justify-content: center;
+}
+
+.containerMain{ 
+    width: 90%; 
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+
+.containerProducto{
+    margin-top: 2em; 
+}
+
+
+.divImg{
+    text-align: center;
+}
+
+.imgPrincipal{
+    display: inline;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.divGalery{
+    display: flex;
+    justify-content: center;
+}
+
+
+.imgMin{
+    margin: .3em ; 
+}
+
+/* efecto escalable imagenes minimizadas  */
+.imgMin:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.imgMin >img{
+    width: 2em;
+}
+
+.containerCompra{
+    text-align: center;
+    background: rgba(245, 245, 245,.5);
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 #f7610657;
+}
+
+.containerCompra > .informacionCompra > div > p {
+    margin: 1em 0 1em 0;
+}
+
+
+.agregaAlCarrito{
+    display: inline;
+    background: #FF7D1B;
+    border-radius: 1.5em; 
+    padding: .6em;
+    
+} 
+
+.informacionCompra{
+    padding: 2em 1em 0 1em;
+}
+
+
+
+
+@media (min-width: 570px) {
+    
+    /* ========================== MAIN PRODUCTOS====================== */
+    .imgPrincipal {
+    /* max-width: 500px; */
+    min-height: 400px;}
+            
+        
+        .imgMin >img{
+            width: 4em;
+        }
+}
+    
+    
+    
+@media (min-width: 1024px){
+ 
+        .containerCompra{
+            padding: 5em 0 0em 0;
+        }
+ 
+        .containerProducto{
+            display: flex; 
+        }
+        
+        .containerCompra{
+            border-radius: 2em;
+            margin: 0 3em 5em 3em;
+        }
+
+        .imgPrincipal {
+            max-height: 600px;
+            min-width: 500px;}
+}
+
+
+@media (min-width: 1200px){
+     .containerProducto {
+   justify-content: space-around
+    }  
+    .divImg{
+    width: 600px;
+    }
+    
+    .imgPrincipal{
+        width: 100%;
+    }
+ 
+    
+}  
