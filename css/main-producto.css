@@ -37,6 +37,95 @@ body{
     padding: 8px;
 }
 
+/*------------------------------ MODALS - FORM MODALS -----------------*/
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    background-color: #000000bd;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.modal-container{
+    width: 90%;
+    display: grid;
+    gap: 100px;
+    padding: 1em;
+    place-items: center;
+    max-width: 400px;
+    background-color: white;
+    max-height: 90%;
+    border-radius: 0.7em;
+}
+
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+#form{
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    margin: auto;
+    place-items: center;
+    height: 90%;
+}
+
+#form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form input{
+    /* width: 400px; */
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cultured);
+   /* max-width: 400px; */
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    display: block;
+    border: 1px solid #FF7D1B;
+    border-radius: 1.3em;
+    background-color: #FF7D1B;
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+    transition: .5s;
+}
+
+.btn-register{
+    display: block;
+    border: 1px solid var(--cultured);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 1.3em;
+    color: var(--sonic-silver);
+}
+
+.btn-login:hover{
+    background-color: transparent;
+    color: #FF7D1B;
+}
+
+#close{
+    color: var(--eerie-black);
+}
+
 
 .contenido-products-search{
      width: 98%;
