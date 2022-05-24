@@ -130,7 +130,7 @@
 @media (min-width: 1200px) {
     .intro {
          width: 700px; 
-         padding: 50px; 
+         padding: 0; 
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -179,6 +179,11 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    
+}
+
+.main-sobre-nosotros {
+    background-color: white;
 }
 
 /* ---PRIMER SECCIÓN---*/
@@ -244,7 +249,14 @@ article {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 5px;
-    box-shadow: 0px 5px 20px black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+}
+.div-img-profile:hover {
+    box-shadow: none;
+    width: 210px;
+    height: 210px;
+    transition: all 0.3s;
+    
 }
 .img-profile {
     width: 250px;
@@ -277,6 +289,33 @@ article h2 {
     padding: 5px;
 }
 
+
+
+.profile-1 .div-img-profile {
+    background-image: url(../img-acerca/jony.jpg);
+    background-size: cover;
+}
+.profile-2 .div-img-profile {
+    background-image: url(../img-acerca/fabi.jpg);
+    background-size: cover;
+}
+.profile-3 .div-img-profile {
+    background-image: url(../img-acerca/yender.jpg);
+    background-size: cover;
+}
+.profile-4 .div-img-profile {
+    background-image: url(../img-acerca/mau.jpg);
+    background-size: cover;
+}
+.profile-5 .div-img-profile {
+    background-image: url(../img-acerca/pablito.jpg);
+    background-size: cover;
+}
+.profile-6 .div-img-profile {
+    background-image: url(../img-acerca/celez.jpg);
+    background-size: cover;
+}
+
 /* ---TERCERA SECCIÓN PESCAR-JP MORGAN---*/
 .section-pescar {
     text-align: center;
@@ -296,16 +335,36 @@ article h2 {
 
 .logo-pescar {
     width: 360px;
-    height: 240px;
+    height: auto;
+    transition: all 0.3s;
 }
 
+.logo-pescar:hover {
+    width: 370px;
+    height: auto;
+    transition: all 0.3s;
+}
 .logo-jp {
     width: 420px;
     height: 155px;
+    transition: all 0.3s;
 }
+.logo-jp:hover {
+    width: 430px;
+    height: 160px;
+    transition: all 0.3s;
+}
+
 .logo-loma {
     width: 180px;
     height: 180px;
+    transition: all 0.3s;
+}
+
+.logo-loma:hover {
+    width: 190px;
+    height: 190px;
+    transition: all 0.3s;
 }
 .section-flex-row {
     display: flex;
@@ -354,13 +413,13 @@ article h2 {
 .fondo-1 {
     background-image: url(../img-acerca/notebook.jpg);
     background-size: cover;
-    background-position: 0px -95px;
+    background-position: 0px -15px;
 }
 
 .fondo-2 {
     background-image: url(../img-acerca/children.jpg);
     background-size: cover;
-    background-position: 0px -75px;
+    background-position: 0px -25px;
 }
 
 .vision button {
@@ -372,7 +431,9 @@ article h2 {
     font-weight: bold;
     margin-left: 250px;
     margin-top: 35px;
+    transition: all 0.4s;
 }
 .vision button:hover {
     background-color: #2174d9; 
+    transition: all 0.4s;
 }
