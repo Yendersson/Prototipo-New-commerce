@@ -19,12 +19,12 @@ xhr2.addEventListener('load', ()=>{
 })
 
 let xhr3 = ajax('vistas/home.html');
+     history.pushState('','', 'home.html')
 xhr3.addEventListener('load', ()=>{
     xhr3.status == 200? _main.innerHTML = xhr3.response: console.log('error')
-    // history.pushState('','', 'home.html')
 })
 
-console.log(location.pathname.slice(10));
+console.log('url', location.pathname);
 
 //FUNCTIONS
 
@@ -34,10 +34,12 @@ function navegar(){
     links.forEach(link =>{
         link.addEventListener('click', e=>{
             e.preventDefault();
-            console.log(link.dataset.id);
+            //console.log(link.dataset.id);
+            
             let archivo = 'vistas/' + link.dataset.id + '.html';
             let xhrLinks = ajax(archivo);
-
+            
+            console.log('url', location.pathname.slice(10))
             history.pushState('','', link.dataset.id + '.html')
 
             xhrLinks.addEventListener('load', ()=>{
@@ -90,13 +92,14 @@ function ajax(url, method = 'get'){
 
     return xhr;
 }
-console.log(location.pathname)
 function historial(){
     window.addEventListener('popstate', ()=>{
-    let historialBack = 'vistas/'+ location.pathname;
+    let historialBack = 'vistas/' + location.pathname.slice(10);
+    console.log(location.pathname.slice(10));
+    console.log(historialBack)
     let xhrHistorial = ajax(historialBack)
     xhrHistorial.addEventListener('load', ()=>{
-        xhrHistorial.status == 200? _main.innerHTML = xhrHistorial.response: console.log('error');
+        xhrHistorial.status == 200? _main.innerHTML = xhrHistorial.response: console.log('error en vuelta de historial');
     })    
     })
 }
