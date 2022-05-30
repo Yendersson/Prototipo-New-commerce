@@ -1,15 +1,17 @@
-/************************************
+
+
+ /************************************
 esto es main de productos*/
 
 
 /*+++++++++ mobile ++++++++*/
-.main-productos{
-    /* background: rgba(255, 181, 82,0.3); */
+#mainProducto{
+    background: rgba(255, 181, 82,0.3);
     display: flex;
     justify-content: center;
 }
 
-.containerMain{ 
+.containerMainProducto{ 
     width: 90%; 
     margin-bottom: 3rem;
     overflow: hidden;
@@ -21,51 +23,51 @@ esto es main de productos*/
 }
 
 
-.divImg{
+.divImgProducto{
     text-align: center;
 }
 
-.imgPrincipal{
+.imgPrincipalProducto{
     display: inline;
     max-height: 300px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
-.divGalery{
+.divGaleryProducto{
     display: flex;
     justify-content: center;
 }
 
 
-.imgMin{
+.imgMinProducto{
     margin: .3em ; 
 }
 
 /* efecto escalable imagenes minimizadas  */
-.imgMin:hover{
+.imgMinProducto:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
 
 
-.imgMin >img{
+.imgMinProducto >img{
     width: 2em;
 }
 
-.containerCompra{
+.containerCompraProducto{
     text-align: center;
     background: rgba(245, 245, 245,.5);
     border-radius: 1em;
     box-shadow: 0 0 1em 0 #f7610657;
 }
 
-.containerCompra > .informacionCompra > div > p {
+.containerCompraProducto > .informacionCompraProducto > div > p {
     margin: 1em 0 1em 0;
 }
 
 
-.agregaAlCarrito{
+.agregaAlCarritoProducto{
     display: inline;
     background: #FF7D1B;
     border-radius: 1.5em; 
@@ -73,7 +75,7 @@ esto es main de productos*/
     
 } 
 
-.informacionCompra{
+.informacionCompraProducto{
     padding: 2em 1em 0 1em;
 }
 
@@ -83,12 +85,12 @@ esto es main de productos*/
 @media (min-width: 570px) {
     
     /* ========================== MAIN PRODUCTOS====================== */
-    .imgPrincipal {
+    .imgPrincipalProducto {
     /* max-width: 500px; */
     min-height: 400px;}
             
         
-        .imgMin >img{
+        .imgMinProducto >img{
             width: 4em;
         }
 }
@@ -97,7 +99,7 @@ esto es main de productos*/
     
 @media (min-width: 1024px){
  
-        .containerCompra{
+        .containerCompraProducto{
             padding: 5em 0 0em 0;
         }
  
@@ -105,12 +107,12 @@ esto es main de productos*/
             display: flex; 
         }
         
-        .containerCompra{
+        .containerCompraProducto{
             border-radius: 2em;
             margin: 0 3em 5em 3em;
         }
 
-        .imgPrincipal {
+        .imgPrincipalProducto {
             max-height: 600px;
             min-width: 500px;}
 }
@@ -120,11 +122,11 @@ esto es main de productos*/
      .containerProducto {
    justify-content: space-around
     }  
-    .divImg{
+    .divImgProducto{
     width: 600px;
     }
     
-    .imgPrincipal{
+    .imgPrincipalProducto{
         width: 100%;
     }
  
