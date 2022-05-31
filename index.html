@@ -1,544 +1,931 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puma - Tienda</title>
-
- <!-------------------- CSS LINK -------------------->
-
-  <link rel="stylesheet" href="./style.css">
-
-  <!-------------------- GOOGLE FONTS LINK -------------------->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  
-  <!-------------------- ICON -------------------->
-
-  <link rel="shortcut icon" href="./assets/ico-test.ico">
-  
-</head>
-
-<body>
-
-  <!-------------------- OVERLAY -------------------->
-  <div class="overlay" data-overlay></div>
+  <head>
     
-  <!-------------------- HEADER -------------------->
-  <header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma - Tienda</title>
 
-    <!-------------------- HEADER-TOP -------------------->
-        <div class="header-top">
+    <!-------------------- CSS LINK -------------------->
 
-          <div class="container">
-                
-            <!-------------------- SOCIAL MEDIA -------------------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-------------------- GOOGLE FONTS LINK -------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-------------------- ICON -------------------->
+    
+    <link rel="shortcut icon" href="./assets/ico-test.ico">
+  
+  </head>
+
+  <body>
+    
+    <!----------------------------------------------
+                        OVERLAY
+    ------------------------------------------------>
+    
+    <div class="overlay" data-overlay></div>
+
+    <!----------------------------------------------
+                         HEADER
+    ------------------------------------------------>
+
+    <header>
+      
+      <!-------------------- HEADER-TOP -------------------->
+
+      <div class="header-top">
+        
+        <div class="container">
+          
+          <!-------------------- SOCIAL MEDIA -------------------->
+          
+          <ul class="header-social-container">
             
-            <ul class="header-social-container">
+            <!-------------------- LOGO FACEBOOK -------------------->
+            
+            <li>
 
-              <!-------------------- LOGO FACEBOOK -------------------->
-              
-              <li>
+              <a href="https://www.facebook.com" target="_blank" class="social-link">
                 
-                <a href="https://www.facebook.com" target="_blank" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
+                <ion-icon name="logo-facebook"></ion-icon>
 
-              </li>
+              </a>
 
-              <!-------------------- LOGO TWITTER -------------------->
+            </li>
 
-              <li>
+            <!-------------------- LOGO TWITTER -------------------->
 
-                <a href="https://twitter.com" target="_blank" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
+            <li>
+              
+              <a href="https://twitter.com" target="_blank" class="social-link">
+                
+                <ion-icon name="logo-twitter"></ion-icon>
 
-              </li>
+              </a>
 
-              <!-------------------- LOGO INSTAGRAM -------------------->
+            </li>
+
+            <!-------------------- LOGO INSTAGRAM -------------------->
                     
-              <li>
+            <li>
 
-                <a href="https://www.instagram.com" target="_blank" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
+              <a href="https://www.instagram.com" target="_blank" class="social-link">
 
-              </li>
+                <ion-icon name="logo-instagram"></ion-icon>
 
-              <!-------------------- LOGO LINKEDIN -------------------->
+              </a>
 
-              <li>
+            </li>
 
-                <a href="https://www.linkedin.com" target="_blank" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
+            <!-------------------- LOGO LINKEDIN -------------------->
 
-              </li>
+            <li>
 
-            </ul>
+              <a href="https://www.linkedin.com" target="_blank" class="social-link">
+
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-------------------- HEADER-MAIN -------------------->
+
+      <div class="header-main">
+        
+        <div class="container">
+          
+          <!-------------------- MAIN LOGO -------------------->
+             
+          <a href="#" class="header-logo">
+            
+            <img src="" alt="puma-logo">
+
+          </a>
+
+          <!--------------------  SEARCH PRODUCTS -------------------->
+          
+          <div class="header-search-container">
+
+            <input type="search" name="search" class="search-field" placeholder="Buscar productos...">
+            
+            <button class="search-btn">
+              
+              <ion-icon name="search-outline"></ion-icon>
+
+            </button>
+
+          </div>
+
+          <!--------------------  ACTION BUTTONS -------------------->
+
+          <div class="header-user-actions">
+
+            <!--------------------  PERSON: LOG IN AND REGISTER -------------------->
+
+            <button class="action-btn">
+              
+              <ion-icon name="person-outline"></ion-icon>
+
+            </button>
+
+            
+            <!-------------------- SHOPPING CART  -------------------->
+
+            <button class="action-btn">
+              
+              <ion-icon name="cart-outline"></ion-icon>
+
+              <span class="count">0</span>
+                        
+            </button>
 
           </div>
 
         </div>
 
-        <!-------------------- HEADER-MAIN -------------------->
-        <div class="header-main">
-            <div class="container">
+      </div>
 
-              <!-------------------- MAIN LOGO -------------------->
+      <!-------------------- DESKTOP MENU -------------------->
 
-          <!--<a href="#" class="header-logo">
-                <img src="" alt="puma-logo">
-              </a>-->
-
-              <!--------------------  SEARCH PRODUCTS -------------------->
-
-                <div class="header-search-container">
-
-                    <input type="search" name="search" class="search-field" placeholder="Buscar productos...">
-
-                    <button class="search-btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-
-                </div>
-
-                <!--------------------  ACTION BUTTONS -------------------->
-
-                <div class="header-user-actions">
-
-                  <!--------------------  PERSON: LOG IN AND REGISTER -------------------->
-
-                    <button class="action-btn">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </button>
-
-                    <!-------------------- SHOPPING CART  -------------------->
-
-                    <button class="action-btn">
-                        <ion-icon name="cart-outline"></ion-icon>
-                        <span class="count">0</span>
-                    </button>
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-------------------- DESKTOP MENU -------------------->
-        <nav class="desktop-navigation-menu">
-            <div class="container">
-
-              <!-------------------- DASHBOARD/CATEGORIES -------------------->
-
-                <ul class="desktop-menu-category-list">
-
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Inicio</a>
-                    </li>
-
-                    <!-------------------- DROPDOWN MENU: CATEGORIES -------------------->
-
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Categorias</a>
+      <nav class="desktop-navigation-menu">
+        
+        <div class="container">
+          
+          <!-------------------- DASHBOARD/CATEGORIES -------------------->
+          
+          <ul class="desktop-menu-category-list">
             
-                        <div class="dropdown-panel">
-            
-                          <ul class="dropdown-panel-list">
-            
-                            <li class="menu-title">
-                              <a href="#">Ropa y accesorios</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Remeras</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Pantalones y Jeans</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Buzos y camperas</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Zapatillas</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Accesorios</a>
-                            </li>
-            
-                          </ul>
-            
-                          <ul class="dropdown-panel-list">
-            
-                            <li class="menu-title">
-                              <a href="#">Electrodomesticos y tecnologia</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Electrodomesticos</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Computacion</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Celulares y telefonos</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Televisores</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Consolas y videojuegos</a>
-                            </li>
-            
-                          </ul>
-            
-                          <ul class="dropdown-panel-list">
-            
-                            <li class="menu-title">
-                              <a href="#">Hogar, muebles y jardin</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Muebles</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Cocina y bazar</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Decoracion</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Jardin</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Iluminacion y accesorios</a>
-                            </li>
-            
-                          </ul>
-            
-                          <ul class="dropdown-panel-list">
-            
-                            <li class="menu-title">
-                              <a href="#">Arte, libros y revistas</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Arte</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Articulos de libreria</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Merceria</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Libros</a>
-                            </li>
-            
-                            <li class="panel-list-item">
-                              <a href="#">Revistas</a>
-                            </li>
-            
-                          </ul>
-            
-                        </div>
-                      </li>
+            <li class="menu-category">
+              
+              <a href="#" class="menu-title">Inicio</a>
 
-                      <!-------------------- MENU LISTED: OFERTAS -------------------->
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Ofertas</a>
+            </li>
 
-                        <ul class="dropdown-list">
+            <!-------------------- DROPDOWN MENU: CATEGORIES -------------------->
 
-                            <li class="dropdown-item">
-                                <a href="#">10% de descuento</a>
-                            </li>
+            <li class="menu-category">
+              
+              <a href="#" class="menu-title">Categorias</a>
 
-                            <li class="dropdown-item">
-                                <a href="#">15% de descuento</a>
-                            </li>
+              <div class="dropdown-panel">
+                
+                <ul class="dropdown-panel-list">
+                  
+                  <li class="menu-title">
+                    
+                    <a href="#">Ropa y accesorios</a>
 
-                            <li class="dropdown-item">
-                                <a href="#">20% de descuento</a>
-                            </li>
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Remeras</a>
 
-                            <li class="dropdown-item">
-                                <a href="#">30% de descuento</a>
-                            </li>
+                  </li>
+            
+                  <li class="panel-list-item">
 
-                        </ul>
+                    <a href="#">Pantalones y Jeans</a>
 
-                    </li>
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Buzos y camperas</a>
 
-                    <!-------------------- MENU OPTION: COMPRAR -------------------->
+                  </li>
+            
+                  <li class="panel-list-item">
 
-                    <li class="menu-category">
-                      <a href="#" class="menu-title">Comprar</a>
-                    </li>
+                    <a href="#">Zapatillas</a>
 
-                    <!-------------------- MENU OPTION: VENDER -------------------->
+                  </li>
+            
+                  <li class="panel-list-item">
 
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Vender</a>
-                    </li>
+                    <a href="#">Accesorios</a>
 
-                    <!-------------------- MENU OPTION: AYUDA -------------------->
-
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Ayuda</a>
-                    </li>
-
-                    <!-------------------- MENU OPTION: SOBRE NOSOTROS -------------------->
-
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Sobre nosotros</a>
-                    </li>
-
+                  </li>
+            
                 </ul>
-            </div>
-        </nav>
+            
+                <ul class="dropdown-panel-list">
+                  
+                  <li class="menu-title">
+                    
+                    <a href="#">Electrodomesticos y tecnologia</a>
 
-        <!-------------------- MOBILE MENU -------------------->
-        <div class="mobile-bottom-navigation">
+                  </li>
+            
+                  <li class="panel-list-item">
 
-            <!-------------------- BOTTOM NAVIGATION BAR -------------------->
+                    <a href="#">Electrodomesticos</a>
 
-            <!-------------------- HAMBURGER MENU -------------------->
+                  </li>
+            
+                  <li class="panel-list-item">
 
-            <button class="action-btn" data-mobile-menu-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
+                    <a href="#">Computacion</a>
 
-            <!-------------------- SHOPPING CART -------------------->
+                  </li>
+            
+                  <li class="panel-list-item">
 
-            <button class="action-btn" data-mobile-menu-open-btn>
-                <ion-icon name="cart-outline"></ion-icon>
-                <span class="count">0</span>
-            </button>
+                    <a href="#">Celulares y telefonos</a>
 
-            <!-------------------- BACK TO HOME BUTTON -------------------->
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Televisores</a>
 
-            <button class="action-btn">
-                <ion-icon name="home-outline"></ion-icon>
-            </button>
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Consolas y videojuegos</a>
 
-            <!-------------------- PERSON: LOG IN AND REGISTER -------------------->
+                  </li>
+            
+                </ul>
+            
+                <ul class="dropdown-panel-list">
+                  
+                  <li class="menu-title">
+                    
+                    <a href="#">Hogar, muebles y jardin</a>
 
-            <button class="action-btn">
-                <ion-icon name="person-outline"></ion-icon>
-            </button>
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Muebles</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Cocina y bazar</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Decoracion</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Jardin</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Iluminacion y accesorios</a>
+
+                  </li>
+            
+                </ul>
+            
+                <ul class="dropdown-panel-list">
+                  
+                  <li class="menu-title">
+
+                    <a href="#">Arte, libros y revistas</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Arte</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+                    
+                    <a href="#">Articulos de libreria</a>
+                    
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Merceria</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Libros</a>
+
+                  </li>
+            
+                  <li class="panel-list-item">
+
+                    <a href="#">Revistas</a>
+
+                  </li>
+            
+                </ul>
+            
+              </div>
+
+            </li>
+
+            <!-------------------- MENU LISTED: OFERTAS -------------------->
+
+            <li class="menu-category">
+              
+              <a href="#" class="menu-title">Ofertas</a>
+
+              <ul class="dropdown-list">
+                
+                <li class="dropdown-item">
+                  
+                  <a href="#">10% de descuento</a>
+
+                </li>
+
+                <li class="dropdown-item">
+
+                  <a href="#">15% de descuento</a>
+
+                </li>
+
+                <li class="dropdown-item">
+
+                  <a href="#">20% de descuento</a>
+
+                </li>
+
+                <li class="dropdown-item">
+
+                  <a href="#">30% de descuento</a>
+
+                </li>
+
+              </ul>
+
+            </li>
+
+            <!-------------------- MENU OPTION: COMPRAR -------------------->
+
+            <li class="menu-category">
+              
+              <a href="#" class="menu-title">Comprar</a>
+
+            </li>
+
+            <!-------------------- MENU OPTION: VENDER -------------------->
+
+            <li class="menu-category">
+
+              <a href="#" class="menu-title">Vender</a>
+
+            </li>
+
+            <!-------------------- MENU OPTION: AYUDA -------------------->
+
+            <li class="menu-category">
+
+              <a href="#" class="menu-title">Ayuda</a>
+
+            </li>
+
+            <!-------------------- MENU OPTION: SOBRE NOSOTROS -------------------->
+
+            <li class="menu-category">
+
+              <a href="#" class="menu-title">Sobre nosotros</a>
+
+            </li>
+
+          </ul>
 
         </div>
 
+      </nav>
 
-        <!-------------------- DROP-DOWN MENU / HAMBURGER -------------------->
+      <!-------------------- MOBILE MENU -------------------->
 
-        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+      <div class="mobile-bottom-navigation">
+        
+        <!-------------------- BOTTOM NAVIGATION BAR -------------------->
+        
+        <!-------------------- HAMBURGER MENU -------------------->
 
-          <!-------------------- MENU TOP -------------------->
+        <button class="action-btn" data-mobile-menu-open-btn>
+          
+          <ion-icon name="menu-outline"></ion-icon>
 
-            <div class="menu-top">
+        </button>
 
-                <h2 class="menu-title">Menu</h2>
+        <!-------------------- SHOPPING CART -------------------->
 
-                <button class="menu-close-btn" data-mobile-menu-close-btn>
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
+        <button class="action-btn" data-mobile-menu-open-btn>
 
-            </div>
+          <ion-icon name="cart-outline"></ion-icon>
 
-            <!-------------------- HOME BUTTON -------------------->
+          <span class="count">0</span>
 
-            <ul class="mobile-menu-category-list">
+        </button>
 
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Inicio</a>
-                </li>
+        <!-------------------- BACK TO HOME BUTTON -------------------->
 
-                <!-------------------- MENU LISTED: CATEGORIAS -------------------->
-                <li class="menu-category">
-                    <button class="close-btn" data-mobile-menu-close-btn></button>
+        <button class="action-btn">
 
-                    <button class="accordion-menu" data-accordion-btn>
+          <ion-icon name="home-outline"></ion-icon>
 
-                        <p class="menu-title">Categorías</p>
+        </button>
 
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
+        <!-------------------- PERSON: LOG IN AND REGISTER -------------------->
 
-                    </button>
+        <button class="action-btn">
 
-                    <ul class="submenu-category-list" data-accordion>
+          <ion-icon name="person-outline"></ion-icon>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Ropa y accesorios</a>
-                        </li>
+        </button>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Electrodomesticos y tecnologia</a>
-                        </li>
+      </div>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Hogar, muebles y jardin</a>
-                        </li>
+      <!-------------------- DROP-DOWN MENU / HAMBURGER -------------------->
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Arte, libros y revistas</a>
-                        </li>
+      <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+        
+        <!-------------------- MENU TOP -------------------->
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Otros</a>
-                        </li>
+        <div class="menu-top">
+          
+          <h2 class="menu-title">Menu</h2>
+          
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            
+            <ion-icon name="close-outline"></ion-icon>
 
-                    </ul>
+          </button>
 
-                </li>
+        </div>
 
-                <!-------------------- MENU LISTED: OFERTAS -------------------->
+        <!-------------------- HOME BUTTON -------------------->
 
-                <li class="menu-category">
+        <ul class="mobile-menu-category-list">
+          
+          <li class="menu-category">
+            
+            <a href="#" class="menu-title">Inicio</a>
 
-                    <button class="accordion-menu" data-accordion-btn>
+          </li>
 
-                        <p class="menu-title">Ofertas</p>
+          <!-------------------- MENU LISTED: CATEGORIAS -------------------->
 
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
+          <li class="menu-category">
+            
+            <button class="close-btn" data-mobile-menu-close-btn></button>
 
-                    </button>
+            <button class="accordion-menu" data-accordion-btn>
+              
+              <p class="menu-title">Categorías</p>
+              
+              <div>
+                
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
 
-                    <ul class="submenu-category-list" data-accordion>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">10% de descuento</a>
-                        </li>
+              </div>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">15% de descuento</a>
-                        </li>
+            </button>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">20% de descuento</a>
-                        </li>
+            <ul class="submenu-category-list" data-accordion>
+              
+              <li class="submenu-category">
+                
+                <a href="#" class="submenu-title">Ropa y accesorios</a>
 
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">30% de descuento</a>
-                        </li>
+              </li>
 
-                    </ul>
+              <li class="submenu-category">
 
-                </li>
+                <a href="#" class="submenu-title">Electrodomesticos y tecnologia</a>
 
-                <!-------------------- MENU ROW: COMPRAR -------------------->
+              </li>
 
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Comprar</a>
-                </li>
+              <li class="submenu-category">
 
-                <!-------------------- MENU ROW: VENDER -------------------->
+                <a href="#" class="submenu-title">Hogar, muebles y jardin</a>
 
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Vender</a>
-                </li>
+              </li>
 
-                <!-------------------- MENU ROW: AYUDA -------------------->
+              <li class="submenu-category">
 
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Ayuda</a>
-                </li>
+                <a href="#" class="submenu-title">Arte, libros y revistas</a>
 
-                <!-------------------- MENU ROW: SOBRE NOSOTROS -------------------->
+              </li>
 
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Sobre nosotros</a>
-                </li>
+              <li class="submenu-category">
+
+                <a href="#" class="submenu-title">Otros</a>
+
+              </li>
 
             </ul>
 
-            <!-------------------- SOCIAL MEDIA  -------------------->
-            <div class="menu-bottom">
+          </li>
 
-                <ul class="menu-social-container">
+          <!-------------------- MENU LISTED: OFERTAS -------------------->
 
-                  <!-------------------- FACEBOOK LOGO  -------------------->
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
+          <li class="menu-category">
+            
+            <button class="accordion-menu" data-accordion-btn>
+              
+              <p class="menu-title">Ofertas</p>
 
-                  <!-------------------- TWITTER LOGO  -------------------->
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
+              <div>
+                
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
 
-                  <!-------------------- INSTAGRAM LOGO  -------------------->
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                  <!-------------------- LINKEDIN LOGO  -------------------->
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-        
-                </ul>
-        
               </div>
 
-        </nav>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              
+              <li class="submenu-category">
+                
+                <a href="#" class="submenu-title">10% de descuento</a>
+
+              </li>
+
+              <li class="submenu-category">
+
+                <a href="#" class="submenu-title">15% de descuento</a>
+
+              </li>
+
+              <li class="submenu-category">
+
+                <a href="#" class="submenu-title">20% de descuento</a>
+
+              </li>
+
+              <li class="submenu-category">
+
+                <a href="#" class="submenu-title">30% de descuento</a>
+
+              </li>
+
+            </ul>
+
+          </li>
+
+          <!-------------------- MENU ROW: COMPRAR -------------------->
+
+          <li class="menu-category">
+
+            <a href="#" class="menu-title">Comprar</a>
+
+          </li>
+
+          <!-------------------- MENU ROW: VENDER -------------------->
+
+          <li class="menu-category">
+
+            <a href="#" class="menu-title">Vender</a>
+
+          </li>
+
+          <!-------------------- MENU ROW: AYUDA -------------------->
+
+          <li class="menu-category">
+
+            <a href="#" class="menu-title">Ayuda</a>
+
+          </li>
+
+          <!-------------------- MENU ROW: SOBRE NOSOTROS -------------------->
+
+          <li class="menu-category">
+
+            <a href="#" class="menu-title">Sobre nosotros</a>
+
+          </li>
+
+        </ul>
+
+        <!-------------------- SOCIAL MEDIA  -------------------->
+
+        <div class="menu-bottom">
+          
+          <ul class="menu-social-container">
+            
+            <!-------------------- FACEBOOK LOGO  -------------------->
+        
+            <li>
+              
+              <a href="#" class="social-link">
+                
+                <ion-icon name="logo-facebook"></ion-icon>
+
+              </a>
+
+            </li>
+
+            <!-------------------- TWITTER LOGO  -------------------->
+        
+            <li>
+
+              <a href="#" class="social-link">
+                
+                <ion-icon name="logo-twitter"></ion-icon>
+
+              </a>
+
+            </li>
+
+            <!-------------------- INSTAGRAM LOGO  -------------------->
+        
+            <li>
+              
+              <a href="#" class="social-link">
+                
+                <ion-icon name="logo-instagram"></ion-icon>
+
+              </a>
+
+            </li>
+
+            <!-------------------- LINKEDIN LOGO  -------------------->
+        
+            <li>
+              
+              <a href="#" class="social-link">
+                
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+              </a>
+
+            </li>
+        
+          </ul>
+        
+        </div>
+
+      </nav>
 
     </header>
 
-    <!-------------------- MAIN -------------------->
+    <!----------------------------------------------
+                        MAIN
+    ------------------------------------------------>
+    
     <main>
+      
+      <!----------------------------------------------
+                          BANNER
+      ------------------------------------------------>
+      
+      <div class="banner">
+        
+        <div class="container">
+          
+          <div class="slider-container has-scrollbar">
+            
+            <div class="slider-item">
+              
+              <img src="./image3.jpg" alt="women's latest fashion sale" class="banner-img">
+              
+              <div class="banner-content">
+                
+                <p class="banner-subtitle">TENDENCIAS DE MODA</p>
+                
+                <h2 class="banner-title">DESCUBRI OFERTAS POR TIEMPO LIMITADO</h2>
 
-      <!-------------------- IMAGE CAROUSEL BANNER -------------------->
+                <p class="banner-text">
+                  
+                  HASTA 12 CUOTAS SIN INTERES
+
+                </p>
+                
+                <a href="#" class="banner-btn">Ver ofertas</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!----------------------------------------------
+                            SERVICE
+        ------------------------------------------------>
+
+        <section class="service-section">
+          
+          <div class="service">
+            
+            <img src="/assets/icons/truck-svgrepo-com.svg" alt="Envíos Gratis" width="60">
+            
+            <div class="service-info">
+              
+              <h3 class="fs-poppins fs-200">Envíos Gratis</h3>
+
+              <p class="fs-montserrat fs-50">Envíos gratis en todos los pedidos</p>
+
+            </div>
+
+          </div>
+
+          <div class="service">
+            
+            <img src="/assets/icons/handshake-svgrepo-com.svg" alt="Monitoreamos tu pedido" width="60">
+            
+            <div class="service-info">
+              
+              <h3 class="fs-poppins fs-200">Ayudamos personas</h3>
+
+              <p class="fs-montserrat fs-50">Colaboramos con distintas organizaciones y causas</p>
+
+            </div>
+
+          </div>
+
+          <div class="service">
+            
+            <img src="/assets/icons/headphone-svgrepo-com.svg" alt="Pagos Seguros" width="60">
+
+            <div class="service-info">
+              
+              <h3 class="fs-poppins fs-200">Soporte 24/7</h3>
+
+              <p class="fs-montserrat fs-50">Soporte en linea las 24hs del día</p>
+
+          </div>
+
+        </div>
+
+        <div class="service">
+            
+          <img src="/assets/icons/credit-card-svgrepo-com.svg" alt="Pagos Seguros" width="60">
+
+          <div class="service-info">
+              
+            <h3 class="fs-poppins fs-200">Pagos Seguros</h3>
+
+            <p class="fs-montserrat fs-50">Cuidamos tus datos y protegemos tu dinero</p>
+
+          </div>
+
+        </div>
+          
+      </section>
+
+      <!----------------------------------------------
+                          ORGANIZATIONS
+      ------------------------------------------------>
 
 
+
+
+
+      <!----------------------------------------------
+                          CATEGORY
+      ------------------------------------------------>
+
+      <h4 class="category-tittle"> Categorías </h4>
+        
+        <div class="category">
+          
+          <div class="container">
+            
+            <div class="category-item-container has-scrollbar">
+              
+              <div class="category-item">
+                
+                <div class="category-img-box">
+                  
+                  <img src="/assets/icons/shirt-svgrepo-com.svg" alt="dress & frock" width="30">
+
+                </div>
+                
+                <div class="category-content-box">
+                  
+                  <div class="category-content-flex">
+                    
+                    <h3 class="category-item-title">Ropa & Accesorios</h3>
+                    
+                    <p class="category-item-amount">(0)</p>
+
+                  </div>
+
+                  <a href="#" class="category-btn">Ver todos</a>
+                  
+                </div>
+
+              </div>
+
+              <div class="category-item">
+                
+                <div class="category-img-box">
+                  
+                  <img src="/assets/icons/pc-svgrepo-com.svg" alt="winter wear" width="30">
+
+                </div>
+
+                <div class="category-content-box">
+                  
+                  <div class="category-content-flex">
+                    
+                    <h3 class="category-item-title">Tecnologia</h3>
+
+                    <p class="category-item-amount">(0)</p>
+
+                  </div>
+
+                  <a href="#" class="category-btn">Ver todos</a>
+
+                </div>
+
+              </div>
+
+              <div class="category-item">
+                
+                <div class="category-img-box">
+                  
+                  <img src="/assets/icons/home-svgrepo-com.svg" alt="glasses & lens" width="30">
+
+                </div>
+
+                <div class="category-content-box">
+                  
+                  <div class="category-content-flex">
+                    
+                    <h3 class="category-item-title">Muebles & Jardin</h3>
+
+                    <p class="category-item-amount">(0)</p>
+
+                  </div>
+
+                  <a href="#" class="category-btn">Ver todos</a>
+
+                </div>
+
+              </div>
+
+              <div class="category-item">
+                
+                <div class="category-img-box">
+                  
+                  <img src="/assets/icons/book-svgrepo-com.svg" alt="shorts & jeans" width="30">
+
+                </div>
+
+                <div class="category-content-box">
+                  
+                  <div class="category-content-flex">
+                    
+                    <h3 class="category-item-title">Libros & Revistas</h3>
+
+                    <p class="category-item-amount">(0)</p>
+
+                  </div>
+
+                  <a href="#" class="category-btn">Ver todos</a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </main>
 
     <!-------------------- FOOTER -------------------->
 
     <footer>
-
+      
       <!-------------------- FOOTER TOP -------------------->
 
       <div class="newsletter">
@@ -559,7 +946,6 @@
             
             <input type="text" type="submit" name="suscribe" class="suscribee" placeholder="tucorreo@gmail.com">
 
-        
             <button class="suscribe-btn">
 
               <ion-icon name="send-outline"></ion-icon>
@@ -870,18 +1256,27 @@
                 </li>
       
                     <li class="footer-nav-item">
+
                       <a href="#" class="footer-nav-link">
+
                         <ion-icon name="logo-linkedin"></ion-icon>
+
                       </a>
+
                     </li>
       
                     <li class="footer-nav-item">
+
                       <a href="#" class="footer-nav-link">
+
                         <ion-icon name="logo-instagram"></ion-icon>
+
                       </a>
+
                     </li>
       
                   </ul>
+
                 </li>
       
               </ul>
@@ -919,5 +1314,6 @@
 
     <script src="./script.js"></script>
 
-</body>
+  </body>
+
 </html>
