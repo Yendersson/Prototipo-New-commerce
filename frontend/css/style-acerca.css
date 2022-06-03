@@ -127,31 +127,31 @@
 
 
 /* COMPUTADORAS */
-@media (min-width: 1200px) {
+
     .intro {
-         width: 700px; 
-         padding: 0; 
+         width: 700px;  
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding-top: 100px;
         align-items: center;
        
     }
     
     .intro h1 {
         padding-bottom: 30px;
-         font-size: 60px;
+         font-size: 50px;
     } 
     
     .intro p {
         width: 650px;
+        font-size: 21px;
     }
    
     .img-1 {
-        position: relative;
-        top: 50px;
-        left: -270px;
+        position: absolute;
+        top: 650px;
+        left: 90px;
     } 
     
     .img-1 img {
@@ -160,8 +160,8 @@
     }
     .img-2 {
         position: absolute;
-        top: 400px;
-        right: 5px;
+        top:450px;
+        right: 30px;
     }
     
     
@@ -170,7 +170,7 @@
         height: auto;
     }
 
-    }
+    
 
     
     
@@ -218,24 +218,22 @@ main {
 /* ---SEGUNDA SECCIÓN PERFILES---*/
 
 .profiles-section {
-    background-image: linear-gradient(to right bottom,#FF7D1B, #ffe11b);
+    background-image: linear-gradient(#FF7D1B, #ffe11b);
+    /* background-color: #ffbb1b; */
     width: 100%;
     height: 750px;
     display: grid;
     grid-template-columns: 350px 350px 350px ;
     grid-template-rows: 350px;
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
+    grid-row-gap: 0;
+    grid-column-gap: 75px;
 }
 
 .profile {
     width: 350px;
     height: 350px;
-    margin-top: 20px;
-    margin-left: 45px;
-}
-
-article {
+    margin-top: 55px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,6 +248,7 @@ article {
     overflow: hidden;
     margin-bottom: 5px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s;
 }
 .div-img-profile:hover {
     box-shadow: none;
@@ -276,17 +275,18 @@ article {
   top: 50px;
   left: 25px;
 }
-article p {
+.profile p {
     color: white;
     width: 300px;
     font-size: 16px;
 }
 
-article h2 {
-    color: white;
+.profile h2 {
+    color: #2c2c2c;
     font-size: 23px;
-    font-weight: 400;
-    padding: 5px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-right: 25px;
 }
 
 
@@ -437,3 +437,82 @@ article h2 {
     background-color: #2174d9; 
     transition: all 0.4s;
 }
+
+
+
+
+/* ================================================================================================================ */
+/* ================================================== RESPONSIVE ================================================= */
+/* ============================================================================================================== */
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
+
+@media (min-width: 480px) {
+/*  
+    .intro {
+        width: 700px;  
+       padding-top: 100px;
+     
+      
+   } */
+   
+   .intro h1 {
+       padding-bottom: 30px;
+        font-size: 14px;
+   } 
+}
+
+@media (min-width: 1200px) {
+    /*  
+        .intro {
+            width: 700px;  
+           padding-top: 100px;
+         
+          
+       } */
+       
+       .intro h1 {
+           padding-bottom: 30px;
+            font-size: 50px;
+       } 
+    }
+/*    
+   .intro p {
+       width: 650px;
+       font-size: 21px;
+   }
+  
+   .img-1 {
+       position: absolute;
+       top: 650px;
+       left: 90px;
+   } 
+   
+   .img-1 img {
+       width: 430px;
+       height: auto;
+   }
+   .img-2 {
+       position: absolute;
+       top:450px;
+       right: 30px;
+   }
+   
+   
+   .img-2 img {
+       width: 300px;
+       height: auto;
+   } */
+
+   
+
+
+
+/* 
+
+@media (min-width: 1200px) {
+
+} */
+
