@@ -245,32 +245,57 @@ main {
 
 .vision_acerca {
     width: 100%;
-    height: 750px;
-    display: grid;
-    /* justify-content: center; */
+    height: auto;
+    /* display: grid;
     grid-template-columns: 50% 50% ;
     grid-template-rows: 350px;
     grid-row-gap:40px;
     grid-column-gap: 0;
-   
+    */
+
+    display: flex;
+    
 }
+
+.vision-1_acerca {
+    display: flex;
+    flex-direction: row;
+}
+
+.vision-2_acerca {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
 
 .vision_acerca div {
     
-    width: 633px;
-    height: 390px;
+    width: 630px;
+    height: 600px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+
 .vision-gradient_acerca {
     background-image: linear-gradient(#FF7D1B, #ffe11b);
+    width: 633px;
+    height: 390px;
 }
 .vision_acerca h2 {
-    font-size: 55px;
+    font-size: 50px;
     padding-bottom: 15px;
-    font-weight: 400;
+    font-weight: 600;
     
 }
 
@@ -280,13 +305,15 @@ main {
 }
 
 .fondo-1_acerca {
-    background-image: url(../img-acerca/notebook.jpg);
+    background-image: url(../img-acerca/children.jpg); 
     background-size: cover;
     background-position: 0px -15px;
+    width: 633px;
+    height: 390px;
 }
 
 .fondo-2_acerca {
-    background-image: url(../img-acerca/children.jpg);
+    background-image: url(../img-acerca/notebook.jpg);
     background-size: cover;
     background-position: 0px -25px;
 }
