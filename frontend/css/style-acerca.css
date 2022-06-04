@@ -2,223 +2,87 @@
 /* ================================================== MAIN ===================================================== */
 /* ============================================================================================================== */
 
-/* CELULARES */
-
-
-/* @media (min-width: 370px) {
-    .intro h1 {
-        padding-top: 25px;
-         font-size: 50px;
-    }
-    .intro {
-        display:flex;
-        flex-direction: column;
-        font-size:17px;
-        
-        
-    }
-
-    .intro-central {
-         padding: 20px 50px 30px 50px;
-    }
-    .intro-izq {
-        width: 320px;
-        padding:20px 100px 20px 20px;
-        margin-top: 40px;
-
-    }
-    .img-1 img {
-        width: 240px;
-        height:auto;
-        position: relative;
-    top: -360px;
-    left: -50px;
-    }
-    .img-2 img {
-        width: 150px;
-         height:auto;
-         position: relative;
-         top: -290px;
-         right: -80px;
-        
-    }
-
-}
-@media (min-width: 570px) {
-    .intro h1 {
-        padding-top: 25px;
-         font-size: 50px;
-    }
-    .intro {
-        display:flex;
-        flex-direction: column;
-        font-size:17px;
-        
-        
-    }
-
-    .intro-central {
-         padding: 20px 80px 55px 80px;
-    }
-    .intro-izq {
-        width: 350px;
-        padding:40px 60px 20px 60px;
-
-    }
-    .img-1 img {
-        width: 300px;
-        height:auto;
-        position: relative;
-    top: -320px;
-    left: -90px;
-    }
-    .img-absolute img {
-        width: 240px;
-         height:auto;
-         position: absolute;
-    top: 510px;
-    right: 10px;
-        
-    }
-}  */
-
-
-
-/* TABLETS */
-/* @media (min-width: 768px) {
-    .intro {
-        width: 700px;
-        padding: 50px; 
-        text-align: center;
-        background-color: red;
-    }
-    
-   .intro h1 {
-        padding-bottom: 30px;
-         font-size: 60px;
-    } 
-    
-    .intro-central {
-        width: 700px;
-        padding: 50px; 
-    }
-    .intro-izq {
-        width: 700px;
-        padding: 50px; 
-    }
-    
-    .img-1 {
-        position: relative;
-        top: -25px;
-        left: -400px;
-    } 
-    
-    
-    .img-2 img {
-        width: 150px;
-         height:auto;
-         position: relative;
-         top: -290px;
-         right: -80px;
-        
-    }
-} */
-
-
 
 /* COMPUTADORAS */
 
-    .intro {
+    .intro_acerca {
          width: 700px;  
         text-align: center;
         display: flex;
         flex-direction: column;
         padding-top: 100px;
         align-items: center;
+        background-image: linear-gradient(#FF7D1B, #ffe11b);
        
     }
     
-    .intro h1 {
+    .intro_acerca h1 {
         padding-bottom: 30px;
          font-size: 50px;
     } 
     
-    .intro p {
+    .intro_acerca p {
         width: 650px;
-        font-size: 21px;
+        font-size: 25px;
     }
    
-    .img-1 {
-        position: absolute;
-        top: 650px;
-        left: 90px;
+    .intro-2_acerca {
+        padding-top: 80px;
+    }
+    .img-1_acerca {
+        position: relative;
+        top: -230px;
+        right: 380px;
     } 
     
-    .img-1 img {
-        width: 430px;
+    .img-1_acerca img {
+        width: 350px;
         height: auto;
     }
-    .img-2 {
-        position: absolute;
-        top:450px;
-        right: 30px;
+    .img-2_acerca {
+        position: relative;
+        top:-480px;
+        left: 460px;
     }
     
     
-    .img-2 img {
-        width: 300px;
+    .img-2_acerca img {
+        width: 270px;
         height: auto;
     }
 
-    
-
-    
     
 main {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+}
+    
+    
+
+.main_acerca {
+    background-color: white;
+    color: rgb(51, 51, 51);
     align-items: center;
     margin: 0;
     
-}
-
-.main-sobre-nosotros {
-    background-color: white;
+  
 }
 
 /* ---PRIMER SECCIÓN---*/
-.intro {
+.intro_acerca {
     width: 100%;
     height: 650px;
     /* width: 700px; */
     /* padding: 50px; */
     text-align: center;
+    
 }
 
-/* .intro h1 {
-    padding-bottom: 30px;
-     font-size: 60px;
-} */
-
-
-/* .img-1 {
-    position: relative;
-    top: -25px;
-    left: -400px;
-} */
-
-
-/* .img-absolute {
-    position: absolute;
-    top: 330px;
-    right: 40px;
-} */
 
 
 /* ---SEGUNDA SECCIÓN PERFILES---*/
 
-.profiles-section {
-    background-image: linear-gradient(#FF7D1B, #ffe11b);
+.profiles-section_acerca {
+    background-image: linear-gradient( #ffe11b, #FF7D1B);
     /* background-color: #ffbb1b; */
     width: 100%;
     height: 750px;
@@ -229,7 +93,7 @@ main {
     grid-column-gap: 75px;
 }
 
-.profile {
+.profile_acerca {
     width: 350px;
     height: 350px;
     margin-top: 55px;
@@ -239,7 +103,7 @@ main {
     align-items: center;
     text-align: center;
 }
-.div-img-profile {
+.div-img-profile_acerca {
     margin-top: 5px;
     width: 200px;
     height: 200px;
@@ -250,40 +114,40 @@ main {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
     transition: all 0.3s;
 }
-.div-img-profile:hover {
+.div-img-profile_acerca:hover {
     box-shadow: none;
     width: 210px;
     height: 210px;
     transition: all 0.3s;
     
 }
-.img-profile {
+.img-profile_acerca {
     width: 250px;
     height: 200px;
     
 }
 
-.article-flex-row {
+.article-flex-row_acerca {
     display: flex;
     margin-left:15px;
 
 }
 
-.profile-icons {
+.profile-icons_acerca {
  
   position: relative;
   top: 50px;
   left: 25px;
 }
-.profile p {
+.profile_acerca p {
     color: white;
     width: 300px;
     font-size: 16px;
 }
 
-.profile h2 {
-    color: #2c2c2c;
-    font-size: 23px;
+.profile_acerca h2 {
+  
+    font-size: 25px;
     font-weight: 600;
     padding-top: 30px;
     padding-right: 25px;
@@ -291,82 +155,86 @@ main {
 
 
 
-.profile-1 .div-img-profile {
+.profile-1_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/jony.jpg);
     background-size: cover;
 }
-.profile-2 .div-img-profile {
+.profile-2_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/fabi.jpg);
     background-size: cover;
 }
-.profile-3 .div-img-profile {
+.profile-3_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/yender.jpg);
     background-size: cover;
 }
-.profile-4 .div-img-profile {
+.profile-4_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/mau.jpg);
     background-size: cover;
 }
-.profile-5 .div-img-profile {
+.profile-5_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/pablito.jpg);
     background-size: cover;
 }
-.profile-6 .div-img-profile {
+.profile-6_acerca .div-img-profile_acerca {
     background-image: url(../img-acerca/celez.jpg);
     background-size: cover;
 }
 
 /* ---TERCERA SECCIÓN PESCAR-JP MORGAN---*/
-.section-pescar {
+.section-pescar_acerca {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 750px;
+    height: 680px;
+    
     
 }
 
-.section-pescar div {
+.section-pescar_acerca div {
     width: 80%;
-    font-size: 21px;
+    font-size: 25px;
 }
 
-.logo-pescar {
-    width: 360px;
+.descrip-pescar_acerca {
+    padding-top: 40px;
+}
+.logo-pescar_acerca {
+    width: 255px;
     height: auto;
     transition: all 0.3s;
 }
 
-.logo-pescar:hover {
-    width: 370px;
+.logo-pescar_acerca:hover {
+    width: 270px;
     height: auto;
     transition: all 0.3s;
 }
-.logo-jp {
-    width: 420px;
-    height: 155px;
+.logo-jp_acerca {
+    width: 380px;
+    height: auto;
     transition: all 0.3s;
 }
-.logo-jp:hover {
-    width: 430px;
-    height: 160px;
-    transition: all 0.3s;
-}
-
-.logo-loma {
-    width: 180px;
-    height: 180px;
+.logo-jp_acerca:hover {
+    width: 390px;
+    height: auto;
     transition: all 0.3s;
 }
 
-.logo-loma:hover {
-    width: 190px;
-    height: 190px;
+.logo-loma_acerca {
+    width: 160px;
+    height: auto;
     transition: all 0.3s;
 }
-.section-flex-row {
+
+.logo-loma_acerca:hover {
+    width: 170px;
+    height: auto;
+    transition: all 0.3s;
+}
+.section-flex-row_acerca {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -375,7 +243,7 @@ main {
 
 /* ---CUARTA SECCIÓN PUMA---*/
 
-.vision {
+.vision_acerca {
     width: 100%;
     height: 750px;
     display: grid;
@@ -387,7 +255,7 @@ main {
    
 }
 
-.vision div {
+.vision_acerca div {
     
     width: 633px;
     height: 390px;
@@ -396,33 +264,34 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.vision-gradient {
+.vision-gradient_acerca {
     background-image: linear-gradient(#FF7D1B, #ffe11b);
 }
-.vision h2 {
+.vision_acerca h2 {
     font-size: 55px;
     padding-bottom: 15px;
+    font-weight: 400;
     
 }
 
-.vision p {
+.vision_acerca p {
     margin: 0px 50px 0px 50px; 
-    font-size: 24px;
+    font-size: 25px;
 }
 
-.fondo-1 {
+.fondo-1_acerca {
     background-image: url(../img-acerca/notebook.jpg);
     background-size: cover;
     background-position: 0px -15px;
 }
 
-.fondo-2 {
+.fondo-2_acerca {
     background-image: url(../img-acerca/children.jpg);
     background-size: cover;
     background-position: 0px -25px;
 }
 
-.vision button {
+/* .vision_acerca button {
     width: 220px;
     height: 50px;
     background-color: #0f5cc8; 
@@ -433,10 +302,10 @@ main {
     margin-top: 35px;
     transition: all 0.4s;
 }
-.vision button:hover {
+.vision_acerca button:hover {
     background-color: #2174d9; 
     transition: all 0.4s;
-}
+} */
 
 
 
@@ -450,65 +319,56 @@ main {
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
 
 @media (min-width: 480px) {
-/*  
-    .intro {
-        width: 700px;  
-       padding-top: 100px;
-     
-      
-   } */
+
    
-   .intro h1 {
+   .intro_acerca h1 {
        padding-bottom: 30px;
         font-size: 14px;
    } 
+
+
 }
 
-@media (min-width: 1200px) {
-    /*  
-        .intro {
-            width: 700px;  
-           padding-top: 100px;
-         
-          
-       } */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 570PX =================================== */
+/* 
+@media (min-width: 570px) {
+   } */
        
-       .intro h1 {
+
+
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 768PX =================================== */
+/* 
+@media (min-width: 768px) {
+ } */
+
+
+
+ 
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 1024PX =================================== */
+  
+@media (min-width: 1024px) {
+
+
+       .intro_acerca h1 {
            padding-bottom: 30px;
             font-size: 50px;
        } 
     }
-/*    
-   .intro p {
-       width: 650px;
-       font-size: 21px;
-   }
-  
-   .img-1 {
-       position: absolute;
-       top: 650px;
-       left: 90px;
-   } 
-   
-   .img-1 img {
-       width: 430px;
-       height: auto;
-   }
-   .img-2 {
-       position: absolute;
-       top:450px;
-       right: 30px;
-   }
-   
-   
-   .img-2 img {
-       width: 300px;
-       height: auto;
-   } */
-
-   
-
-
 
 /* 
 
