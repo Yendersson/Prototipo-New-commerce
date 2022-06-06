@@ -20,10 +20,12 @@ app.use((req, res, next) => {
 await conexion()
 
 app.get('/', (req,res)=>{
-    res.send('Hola Mundo');
+    res.send('Api rest de New-Commerce');
 })
 
 app.use('/newcommerce/v1', router);
+
+console.log(process.env)
 
 
 const PORT = process.env.PORT || 8080;
