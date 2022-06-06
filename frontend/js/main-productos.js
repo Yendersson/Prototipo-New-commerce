@@ -1,7 +1,7 @@
 //obtenemos imagenes 
 
 function imgProductos(){
- let imgP = document.querySelector(".imgPrincipal");
+ let imgP = document.querySelector(".imgPrincipalProducto");
  let imgUno = document.querySelector(".imgSrc1");
  let imgDos = document.querySelector(".imgSrc2");
  let imgTres = document.querySelector(".imgSrc3");
