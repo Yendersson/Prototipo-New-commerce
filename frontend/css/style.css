@@ -54,6 +54,10 @@ html {
     overscroll-behavior: contain;
 }
 
+.header-logo{
+    width: 23%;
+}
+
 a {
     text-decoration: none; 
 }
@@ -121,6 +125,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .container {
     padding: 0 15px; 
+}
+
+.container-flex{
+    display: flex;
+    align-items: center;
 }
 
 .has-scrollbar {
@@ -528,6 +537,12 @@ footer {
 
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
 
+/* @media (min-width: 320px){
+    .header-logo{
+        width: 23%;
+    }
+} */
+
 @media (min-width: 480px) {
 
     :root {
@@ -549,7 +564,7 @@ footer {
     }
    
     .header-main {
-         padding: 25px 0; 
+         /* padding: 25px 0;  */
     }
    
     .mobile-bottom-navigation {
@@ -656,6 +671,10 @@ footer {
       --fs-2: 1.125rem;
     }
 
+    .header-logo{
+        width: 13%;
+    }
+
     /*REUSED STYLE*/
     .container {
         max-width: 980px; 
@@ -693,6 +712,14 @@ footer {
       font-size: 35px;
       color: black;
       padding: 5px;
+    }
+
+    /* .header-logo{
+        display: block;
+    } */
+
+    .header-main{
+        padding: 0;
     }
   
     .header-user-actions .count {
@@ -960,4 +987,9 @@ footer {
         max-width: 1350px; 
     }
 
+}
+
+.logo{
+    width: 100%;
+    display: block;
 }
