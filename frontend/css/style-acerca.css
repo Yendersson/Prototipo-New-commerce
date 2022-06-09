@@ -82,108 +82,102 @@ main {
 
 /* ---SEGUNDA SECCIÓN PERFILES---*/
 
-.profiles-section_acerca {
+/* .profiles-section_acerca {
     background-image: linear-gradient( #ffe11b, #FF7D1B);
-   
-    /* background-color: #ffbb1b; */
-    width: 100%;
+    */
+
+    .perfiles_acerca {
+        background-image: linear-gradient( #ffe11b, #FF7D1B);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+.container-perfiles_acerca {
+    width: 85%;
+    height: auto;
+    display: grid;
     justify-content: center;
     align-items: center;
-    height: 750px;
-    display: grid;
-    grid-template-columns: 10% 10% 10%;
-    grid-template-rows: 350px;
-    grid-row-gap: 0;
-    grid-column-gap: 20px;
-    
+    grid-template-columns: auto auto auto;
+    gap: 2% 10%;
+    margin: 30px;
 }
 
-.profile_acerca {
-    width: 350px;
-    height: 350px;
-    margin-top: 55px;
-    margin-left: 30px;
+.perfil_acerca {
+    width: 100%;
+    height: auto;
+    
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
 }
-.div-img-profile_acerca {
-    margin-top: 5px;
-    width: 200px;
-    height: 200px;
-    background-color: red;
+
+.imagen-perfil_acerca {
+    
+   
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 5px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
     transition: all 0.3s;
-}
-.div-img-profile_acerca:hover {
-    box-shadow: none;
-    width: 210px;
-    height: 210px;
-    transition: all 0.3s;
-    
-}
-.img-profile_acerca {
-    width: 250px;
-    height: 200px;
-    
-}
-
-.article-flex-row_acerca {
-    display: flex;
-    margin-left:15px;
-
-}
-
-.profile-icons_acerca {
- 
-  position: relative;
-  top: 50px;
-  left: 25px;
-}
-.profile_acerca p {
-    color: white;
-    width: 300px;
-    font-size: 16px;
-}
-
-.profile_acerca h2 {
+    width: 60%;
   
-    font-size: 25px;
-    font-weight: 600;
-    padding-top: 30px;
-    padding-right: 25px;
+}
+
+
+ .imagen-perfil_acerca:hover {
+    box-shadow: none;
+    transition: all 0.3s;
+} 
+
+
+.imagen-perfil_acerca, .redes_acerca {
+    margin: 10px;
+}
+.imagen-perfil_acerca img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.redes_acerca img {
+    transition: all 0.3s;
+
+  } 
+  .redes_acerca img:hover {
+    transition: all 0.3s;
+    padding: 0;
+   
+} 
+
+
+
+
+.redes_acerca {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
 
 
 
-.profile-1_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/jony.jpg);
-    background-size: cover;
-}
-.profile-2_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/fabi.jpg);
-    background-size: cover;
-}
-.profile-3_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/yender.jpg);
-    background-size: cover;
-}
-.profile-4_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/mau.jpg);
-    background-size: cover;
-}
-.profile-5_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/pablito.jpg);
-    background-size: cover;
-}
-.profile-6_acerca .div-img-profile_acerca {
-    background-image: url(../img-acerca/celez.jpg);
-    background-size: cover;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---TERCERA SECCIÓN PESCAR-JP MORGAN---*/
 .section-pescar_acerca {
@@ -283,7 +277,7 @@ main {
 
 .vision_acerca div {
     
-    width: 630px;
+    width: auto;
     height: 600px;
     text-align: center;
     display: flex;
@@ -352,28 +346,44 @@ main {
 
 @media (min-width: 360px) {
 
+    .container-perfiles_acerca {
+        grid-template-columns: auto;
+        gap: 0% 0%; 
+    }
 
+    .perfil_acerca {
+        width: 300px;
+    height: auto;
+    margin:10px;
+    }
+    .container-perfiles_acerca h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .redes_acerca img {
+        width: 40px;
+        height: auto;
+       padding: 5px;
 
-    .profiles-section_acerca {
-        grid-template-columns: auto auto ;
-        justify-content: center;
-        padding: 20px;
-        height: auto;
-    }
-    .profile_acerca {
-        width: auto;
-    }
-    .profiles-section_acerca {
-        height: auto;
-    }
+      } 
+      
+      .redes_acerca img:hover {
+        width: 35px;
+        
+       
+    } 
+      .imagen-perfil_acerca {
+          width: 50%;
+      }
+
 
     .vision_acerca {
         height: auto;
     }
     .vision_acerca div {
     
-        width: 100%;
-        height: 300px;
+        width: auto;
+        height: 600px;
       
     }
     .vision_acerca p {
@@ -406,10 +416,6 @@ main {
     .logo-loma_acerca:hover {
         width: 120px;
     }
-
-
-
-
 
 
 
@@ -461,19 +467,23 @@ main {
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
 @media (min-width: 480px) {
 
-    .profiles-section_acerca {
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-        height: auto;
+    .container-perfiles_acerca {
+        grid-template-columns: auto;
     }
-    .profile_acerca {
-        width: auto;
+
+    .perfil_acerca {
+        width: 300px;
+    height: auto;
     }
-    .profiles-section_acerca {
-        height: auto;
+    .container-perfiles_acerca h2 {
+        font-size: 18px;
+        
     }
+    
+     
+      .imagen-perfil_acerca {
+          width: 50%;
+      }
 
     .vision_acerca {
         height: auto;
@@ -555,100 +565,6 @@ main {
     }
 }
 
-/* @media (max-width: 768px) {
-    .profiles-section_acerca {
-        grid-template-columns: auto auto ;
-        justify-content: center;
-        padding: 20px;
-        height: auto;
-    }
-    .profile_acerca {
-        width: auto;
-    }
-    .profiles-section_acerca {
-        height: auto;
-    }
-
-    .vision_acerca {
-        height: auto;
-    }
-    .vision_acerca div {
-    
-        width: 100%;
-        height: 300px;
-      
-    }
-    .vision_acerca p {
-        font-size: 12px;
-        margin: 0px 20px 0px 20px;
-    }
-    .vision_acerca h2 {
-        font-size: 23px;
-    }
-
-    .section-pescar_acerca p {
-        font-size: 18px;
-    }
-
-    .logo-pescar_acerca {
-        width: 190px;
-    }
-    .logo-pescar_acerca:hover {
-        width: 200px;
-    }
-    .logo-jp_acerca {
-        width: 245px;
-    }
-    .logo-jp_acerca:hover {
-        width: 255px;
-    }
-    .logo-loma_acerca {
-        width: 110px;
-    }
-    .logo-loma_acerca:hover {
-        width: 120px;
-    }
-
-
-    .intro_acerca {
-        display:inline-block;
-    }
-    .intro_acerca p {
-        font-size: 18px;
-        width: 85%;
-        margin: 0 auto;
-    }
-    .intro_acerca h1 {
-        font-size: 40px;
-    }
-
-
-    .img-1_acerca {
-        top: 48%;
-        right: 43%;
-    } 
-    
-    .img-1_acerca img {
-        width: 273px;
- 
-    }
-    .img-2_acerca {
-        top:64%;
-        left: 60%;
-    }
-    
-    
-    .img-2_acerca img {
-        width: 183px;
-      
-    }
-
-    .intro-2_acerca p {
-        width: 55%;
-        margin: 27px 0 0 23px;
-    }
-} */
-
 
 
 
@@ -663,6 +579,15 @@ main {
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 570PX =================================== */
  
 @media (min-width: 570px) {
+
+    .container-perfiles_acerca {
+        grid-template-columns: auto;
+        
+    }
+        .container-perfiles_acerca h2 {
+            font-size: 20px;
+        
+        }
 
     .intro_acerca {
         display:inline-block;
@@ -703,6 +628,8 @@ main {
         width: 55%;
         margin: 27px 0 0 23px;
     }
+
+
 }
 
 
@@ -714,6 +641,27 @@ main {
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 670PX =================================== */
 
 @media (min-width: 670px) {
+
+    .imagen-perfil_acerca {
+        width: 55%;
+    }
+
+    .redes_acerca img {
+        width: 42px;
+        height: auto;
+       padding: 5px;
+
+      } 
+      
+      .redes_acerca img:hover {
+        width: 37px;
+        
+       
+    } 
+      .container-perfiles_acerca h2 {
+        font-size: 21px;
+    
+    }
 
     .intro_acerca {
         display:inline-block;
@@ -760,24 +708,36 @@ main {
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 768PX =================================== */
 
 @media (min-width: 768px) {
-    .profiles-section_acerca {
-        grid-template-columns: auto auto ;
-        justify-content: center;
-        padding: 20px;
-        height: auto;
-    }
-    .profile_acerca {
-        width: auto;
-    }
-    .profiles-section_acerca {
-        height: auto;
+ 
+    .container-perfiles_acerca {
+        grid-template-columns: auto auto;
+        gap: 0% 10%; 
     }
 
+    .container-perfiles_acerca h2 {
+        font-size: 22px;
+    
+    }
+    .imagen-perfil_acerca {
+        width: 60%;
+    }
+    .redes_acerca img {
+        width: 44px;
+        height: auto;
+       padding: 5px;
+
+      } 
+   
+      .redes_acerca img:hover {
+        width: 39px;
+        
+       
+    } 
     
 
     .vision_acerca div {
     
-        width: 100%;
+        width: auto;
         height: 680px;
     }
    .intro_acerca h1 {
@@ -845,36 +805,24 @@ main {
   
 @media (min-width: 1024px) {
 
+    .container-perfiles_acerca {
+        grid-template-columns: auto auto auto;
+        gap: 2% 2%;
+    }
+
+
 
     .vision_acerca div {
     
-        width: 630px;
+        width: auto;
         height: 600px;
     }
        .intro_acerca h1 {
            padding-bottom: 30px;
             font-size: 50px;
        } 
-       .profiles-section_acerca {
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        padding: 20px;
-        
-    }
 
   
-    .profile_acerca {
-        width: auto;
-    }
-    .profiles-section_acerca {
-        height: auto;
-    }
-
-
-
-
-
-
 
     .intro_acerca p {
         font-size: 24px;
@@ -928,65 +876,94 @@ main {
 
 
 
+ 
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 1200PX =================================== */
+  
 
 @media (min-width: 1200px) {
-    .vision_acerca div {
-    width: 100%;
-}
-   
 
+    .container-perfiles_acerca {
+        
+        gap: 1% 8%;
+    }
 
-
-
-
-
-
-.vision_acerca h2 {
-    font-size: 50px;
+    .container-perfiles_acerca h2 {
+        font-size: 23px;
     
-    font-weight: 600;
+    }
+    .imagen-perfil_acerca {
+        width: 63%;
+    }
     
-}
+    .redes_acerca img {
+        width: 46px;
+        height: auto;
+       padding: 5px;
 
-.vision_acerca p {
-    margin: 0px 50px 0px 50px; 
-    font-size: 25px;
-}
+      } 
+      .redes_acerca img:hover {
+        width: 42px;
+        
+       
+    } 
+            .vision_acerca div {
+            width: auto;
+        }
+        
+
+
+        .section-pescar_acerca div {
+            
+            font-size: 25px;
+        }
 
 
 
-   
-   .intro_acerca p {
-       width: 65%;
-       font-size: 25px;
-   }
-  
-   .img-1_acerca {
-      
-       top: 44%;
-       right: 69%;
-   } 
-   
-   .img-1_acerca img {
-       width: 333px;
-       height: auto;
-   }
-   .img-2_acerca {
-     
-       top:32%;
-       left: 78%;
-   }
-   
-   
-   .img-2_acerca img {
-       width: 240px;
-       height: auto;
-   }
+
+
+        .vision_acerca h2 {
+            font-size: 50px;
+            
+            font-weight: 600;
+            
+        }
+
+        .vision_acerca p {
+            margin: 0px 50px 0px 50px; 
+            font-size: 25px;
+        }
+
+
+
+        
+        .intro_acerca p {
+            width: 65%;
+            font-size: 25px;
+        }
+        
+        .img-1_acerca {
+            
+            top: 44%;
+            right: 69%;
+        } 
+        
+        .img-1_acerca img {
+            width: 333px;
+            height: auto;
+        }
+        .img-2_acerca {
+            
+            top:32%;
+            left: 78%;
+        }
+        
+        
+        .img-2_acerca img {
+            width: 240px;
+            height: auto;
+        }
 }   
 
-@media (max-width: 1200px) {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr ));
-}
 
 
 
@@ -1020,3 +997,6 @@ main {
 }
 
 }
+
+
+
