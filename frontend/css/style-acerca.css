@@ -188,6 +188,7 @@ main {
     align-items: center;
     width: 100%;
     height: 680px;
+    background-color: white;
     
     
 }
@@ -200,39 +201,45 @@ main {
 .descrip-pescar_acerca {
     padding-top: 40px;
 }
+
 .logo-pescar_acerca {
-    width: 255px;
-    height: auto;
+    padding: 5px;
     transition: all 0.3s;
 }
 
 .logo-pescar_acerca:hover {
-    width: 270px;
-    height: auto;
-    transition: all 0.3s;
-}
-.logo-jp_acerca {
-    width: 380px;
-    height: auto;
-    transition: all 0.3s;
-}
-.logo-jp_acerca:hover {
-    width: 390px;
-    height: auto;
+   
+    padding: 0;
     transition: all 0.3s;
 }
 
-.logo-loma_acerca {
-    width: 160px;
+.logo-jp_acerca {
+    padding: 5px;
+    transition: all 0.3s;
+    width: 380px;
     height: auto;
+    
+}
+.logo-jp_acerca:hover {
+    padding: 0;
+    transition: all 0.3s;
+    width: 390px;
+    height: auto;
+    
+}
+
+.logo-loma_acerca {
+  
+    padding: 5px;
     transition: all 0.3s;
 }
 
 .logo-loma_acerca:hover {
-    width: 170px;
-    height: auto;
+    
+    padding: 0;
     transition: all 0.3s;
 }
+
 .section-flex-row_acerca {
     display: flex;
     flex-direction: row;
@@ -316,6 +323,84 @@ main {
     background-size: cover;
     background-position: 0px -25px;
 }
+
+
+
+
+.mision_acerca {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.card_acerca {
+    position: relative;
+    width: 270px;
+    height: 310px;
+    font-weight: 300;
+    padding: 10px;
+    text-align: center;
+   
+    
+}
+.card_acerca p {
+    font-size: 16px;
+    
+}
+.card_acerca .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card_acerca .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
+    background-image: linear-gradient( #ffe11b, #FF7D1B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_acerca .front h3 {
+    position: absolute;
+    font-size: 22px;
+    
+}
+
+.card_acerca .back {
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
+    padding: 20px;
+    line-height: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249)
+    
+}
+
+
+.card_acerca:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+    transition: all 0.7s;
+}
+.card_acerca:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+    transition: all 0.7s;
+}
+
+
+
 
 /* .vision_acerca button {
     width: 220px;
@@ -990,19 +1075,54 @@ main {
         
 
 
-        .section-pescar_acerca div {
+        .section-pescar_acerca p {
             
-            font-size: 25px;
+            font-size: 23px;
         }
 
 
 
+        .logo-pescar_acerca {
+            width: 250px;
+            height: auto;
 
-
+        }
        
-
-
+        .logo-pescar_acerca:hover {
+            width: 260px;
+            height: auto;
+        }
         
+
+
+
+        .logo-jp_acerca {
+          
+            width: 335px;
+            height: auto;
+            
+        }
+        .logo-jp_acerca:hover {
+            
+            width: 350px;
+            height: auto;
+            
+        }
+
+
+        .logo-loma_acerca {
+            width: 140px;
+            height: auto;
+          
+        }
+        
+        .logo-loma_acerca:hover {
+            width: 145px;
+            height: auto;
+           
+        }
+
+
         .vision_acerca p {
             font-size: 22px;
             
