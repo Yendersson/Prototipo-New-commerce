@@ -202,43 +202,19 @@ main {
     padding-top: 40px;
 }
 
-.logo-pescar_acerca {
+.logos_acerca {
     padding: 5px;
     transition: all 0.3s;
-}
-
-.logo-pescar_acerca:hover {
-   
-    padding: 0;
-    transition: all 0.3s;
-}
-
-.logo-jp_acerca {
-    padding: 5px;
-    transition: all 0.3s;
-    width: 380px;
     height: auto;
-    
 }
-.logo-jp_acerca:hover {
+.logos_acerca:hover {
     padding: 0;
     transition: all 0.3s;
-    width: 390px;
-    height: auto;
-    
+      height: auto;
 }
 
-.logo-loma_acerca {
-  
-    padding: 5px;
-    transition: all 0.3s;
-}
 
-.logo-loma_acerca:hover {
-    
-    padding: 0;
-    transition: all 0.3s;
-}
+
 
 .section-flex-row_acerca {
     display: flex;
@@ -339,18 +315,14 @@ main {
 
 .card_acerca {
     position: relative;
-    width: 270px;
-    height: 310px;
+   
     font-weight: 300;
-    padding: 10px;
+    
     text-align: center;
    
     
 }
-.card_acerca p {
-    font-size: 16px;
-    
-}
+
 .card_acerca .face {
     position: absolute;
     width: 100%;
@@ -372,7 +344,7 @@ main {
 
 .card_acerca .front h3 {
     position: absolute;
-    font-size: 22px;
+   
     
 }
 
@@ -380,7 +352,7 @@ main {
     transform: perspective(600px) rotateY(180deg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
     padding: 20px;
-    line-height: 22px;
+   
     text-align: center;
     display: flex;
     justify-content: center;
@@ -453,7 +425,7 @@ main {
       } 
       
       .redes_acerca img:hover {
-        width: 35px;
+        width: 40px;
         
        
     } 
@@ -472,7 +444,7 @@ main {
       
     }
     .vision_acerca p {
-        font-size: 13px;
+        font-size: 14px;
         margin: 0px 20px 0px 20px;
     }
     .vision_acerca h2 {
@@ -496,14 +468,8 @@ main {
 
 
 
-
-
-
-
-
-
     .section-pescar_acerca p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .logo-pescar_acerca {
@@ -513,18 +479,25 @@ main {
         width: 200px;
     }
     .logo-jp_acerca {
-        width: 245px;
+        width: 186px;
     }
     .logo-jp_acerca:hover {
-        width: 255px;
+        width: 186px;
     }
     .logo-loma_acerca {
-        width: 110px;
+        width: 85px;
     }
     .logo-loma_acerca:hover {
-        width: 120px;
+        width: 85px;
     }
-
+    .logo-mecenazgo_acerca {
+        width: 70px;
+       
+    }
+    .logo-mecenazgo_acerca:hover {
+        width: 70px;
+        
+    }
 
 
 
@@ -554,7 +527,7 @@ main {
  
     }
     .img-2_acerca {
-        top:76%;
+        top:71%;
         left: 60%;
     }
     
@@ -568,8 +541,45 @@ main {
         width: 55%;
         margin: 5px 0 0 23px;
     }
+    
+
+
+    .mision_acerca {
+        flex-direction: column;
+        height: 690px;
+    }
+
+    
+
+
+
+
+.card_acerca {
+    
+    width: 190px;
+    height: 210px;
+   
+ 
+   
+    
+}
+.card_acerca p {
+    font-size: 13px;
+    
 }
 
+.card_acerca .back {
+ 
+    padding: 15px;
+    line-height: 15px;
+}
+.card_acerca .front h3 {
+    
+    font-size: 16px;
+    
+}
+
+}
 
    
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
@@ -596,42 +606,23 @@ main {
     
    
     .vision_acerca p {
-        font-size: 14px;
+        font-size: 16px;
         
     }
     .vision_acerca h2 {
         font-size: 24px;
     }
 
-    .section-pescar_acerca p {
-        font-size: 18px;
-    }
 
-    .logo-pescar_acerca {
-        width: 190px;
-    }
-    .logo-pescar_acerca:hover {
-        width: 200px;
-    }
-    .logo-jp_acerca {
-        width: 245px;
-    }
-    .logo-jp_acerca:hover {
-        width: 255px;
-    }
-    .logo-loma_acerca {
-        width: 110px;
-    }
-    .logo-loma_acerca:hover {
-        width: 120px;
-    }
+ 
+  
 
 
     .intro_acerca {
         display:inline-block;
     }
     .intro_acerca p {
-        font-size: 18px;
+        font-size: 17px;
         width: 85%;
         margin: 0 auto;
     }
@@ -641,7 +632,7 @@ main {
 
 
     .img-1_acerca {
-        top: 48%;
+        top: 51%;
         right: 43%;
     } 
     
@@ -664,6 +655,42 @@ main {
         width: 55%;
         margin: 27px 0 0 23px;
     }
+
+
+
+
+    
+
+    .section-pescar_acerca p {
+        font-size: 17px;
+    }
+    .logo-pescar_acerca {
+        width: 190px;
+    }
+    .logo-pescar_acerca:hover {
+        width: 198px;
+    }
+    .logo-jp_acerca {
+        width: 196px;
+    }
+    .logo-jp_acerca:hover {
+        width: 196px;
+    }
+    .logo-loma_acerca {
+        width: 95px;
+    }
+    .logo-loma_acerca:hover {
+        width: 95px;
+    }
+    .logo-mecenazgo_acerca {
+        width: 80px;
+       
+    }
+    .logo-mecenazgo_acerca:hover {
+        width: 80px;
+     
+    }
+
 }
 
 
@@ -706,7 +733,7 @@ main {
 
 
     .img-1_acerca {
-        top: 43%;
+        top: 45%;
         right: 48%;
     } 
     
@@ -745,13 +772,73 @@ main {
     }
     
     .vision_acerca p {
-        font-size: 15px;
+        font-size: 17px;
         
     }
     .vision_acerca h2 {
         font-size: 25px;
     }
+
+        
+.card_acerca {
+    
+    width: 215px;
+    height: 250px;
+   
+    margin: 30px;
+   
+    
 }
+.card_acerca p {
+    font-size: 15px;
+    
+}
+
+.card_acerca .back {
+ 
+    padding: 15px;
+    line-height: 15px;
+}
+.card_acerca .front h3 {
+    
+    font-size: 16px;
+    
+}
+
+.mision_acerca {
+    flex-direction: row;
+    height: 575px;
+}
+
+
+
+.section-pescar_acerca p {
+    font-size: 18px;
+}
+
+.logo-jp_acerca {
+    width: 245px;
+}
+.logo-jp_acerca:hover {
+    width: 245px;
+}
+.logo-loma_acerca {
+    width: 110px;
+}
+.logo-loma_acerca:hover {
+    width: 110px;
+}
+.logo-mecenazgo_acerca {
+    width: 95px;
+   
+}
+.logo-mecenazgo_acerca:hover {
+    width: 95px;
+ 
+}
+
+}
+
 
 
    
@@ -775,7 +862,7 @@ main {
       } 
       
       .redes_acerca img:hover {
-        width: 37px;
+        width: 42px;
         
        
     } 
@@ -789,7 +876,7 @@ main {
         height: 700px;
     }
     .intro_acerca p {
-        font-size: 21px;
+        font-size: 19px;
         width: 85%;
         padding: 5px;
         margin: 0 auto;
@@ -809,7 +896,7 @@ main {
  
     }
     .img-2_acerca {
-        top:62%;
+        top:57%;
         left: 69%;
     }
     
@@ -837,12 +924,63 @@ main {
     }
 
     .vision_acerca p {
-        font-size: 16px;
+        font-size: 18px;
         
     }
     .vision_acerca h2 {
         font-size: 26px;
     }
+
+
+
+
+            
+.card_acerca {
+    
+    width: 225px;
+    height: 275px;
+   
+    margin: 30px;
+   
+    
+}
+.card_acerca p {
+    font-size: 16px;
+    
+}
+
+.card_acerca .back {
+ 
+    padding: 15px;
+    line-height: 18px;
+}
+.card_acerca .front h3 {
+    
+    font-size: 18px;
+    
+}
+
+.mision_acerca {
+ 
+    height: 600px;
+}
+
+
+
+
+
+
+.section-pescar_acerca p {
+    font-size: 19px;
+}
+.logo-pescar_acerca {
+    width: 210px;
+}
+.logo-pescar_acerca:hover {
+    width: 220px;
+}
+
+
 }
 
 
@@ -870,7 +1008,7 @@ main {
       } 
    
       .redes_acerca img:hover {
-        width: 39px;
+        width: 44px;
         
        
     } 
@@ -898,7 +1036,7 @@ main {
 }
 
 .vision_acerca p {
-    font-size: 18px;
+    font-size: 20px;
     
 }
 .vision_acerca h2 {
@@ -911,7 +1049,7 @@ main {
 
   
 .intro_acerca p {
-    font-size: 23px;
+    font-size: 21px;
     width: 85%;
     padding: 5px;
     margin: 0 auto;
@@ -931,8 +1069,8 @@ main {
 
 }
 .img-2_acerca {
-    top:62%;
-    left: 69%;
+    top:59%;
+    left: 71%;
 }
 
 
@@ -945,7 +1083,71 @@ main {
     width: 68%;
     margin: 42px 0 0 23px;
 }
+
+
+
+.card_acerca {
+    
+    width: 215px;
+    height: 310px;
+   
+    margin: 15px;
+   
+    
 }
+
+
+.card_acerca .back {
+ 
+    padding: 15px;
+    line-height: 20px;
+}
+
+
+.mision_acerca {
+    
+    height: 380px;
+}
+
+
+
+
+
+
+.section-pescar_acerca p {
+    font-size: 21px;
+}
+.logo-pescar_acerca {
+    width: 215px;
+}
+.logo-pescar_acerca:hover {
+    width: 225px;
+}
+
+.logo-jp_acerca {
+    width: 270px;
+}
+.logo-jp_acerca:hover {
+    width: 270px;
+}
+.logo-loma_acerca {
+    width: 120px;
+}
+.logo-loma_acerca:hover {
+    width: 120px;
+}
+.logo-mecenazgo_acerca {
+    width: 105px;
+   
+}
+.logo-mecenazgo_acerca:hover {
+    width: 105px;
+   
+}
+}
+
+
+            
 
  
 
@@ -981,7 +1183,7 @@ main {
     
     
     .img-1_acerca {
-        top: 42%;
+        top: 45%;
         right: 64%;
     } 
     
@@ -990,13 +1192,13 @@ main {
     
     }
     .img-2_acerca {
-        top:36%;
-        left: 79%;
+        top:38%;
+        left: 80%;
     }
     
     
     .img-2_acerca img {
-        width: 209px;
+        width: 200px;
       
     }
     
@@ -1023,6 +1225,64 @@ main {
     .vision_acerca h2 {
         font-size: 30px;
     }
+
+
+    .card_acerca {
+    
+        width: 260px;
+       
+    }
+    
+    
+    .card_acerca .back {
+     
+
+        line-height: 22px;
+    }
+
+    .card_acerca p {
+    font-size: 17px;
+    
+}
+
+.card_acerca .front h3 {
+    
+    font-size: 20px;
+    
+}
+
+  
+.section-pescar_acerca p {
+    font-size: 21px;
+}
+.logo-pescar_acerca {
+    width: 225px;
+}
+.logo-pescar_acerca:hover {
+    width: 235px;
+}
+
+.logo-jp_acerca {
+    width: 280px;
+}
+.logo-jp_acerca:hover {
+    width: 280px;
+}
+.logo-loma_acerca {
+    width: 130px;
+}
+.logo-loma_acerca:hover {
+    width: 130px;
+}
+.logo-mecenazgo_acerca {
+    width: 115px;
+   
+}
+.logo-mecenazgo_acerca:hover {
+    width: 115px;
+   
+}
+
 
 
     }
@@ -1065,7 +1325,7 @@ main {
 
       } 
       .redes_acerca img:hover {
-        width: 42px;
+        width: 46px;
         
        
     } 
@@ -1077,50 +1337,54 @@ main {
 
         .section-pescar_acerca p {
             
-            font-size: 23px;
+            font-size: 24px;
         }
 
 
 
         .logo-pescar_acerca {
             width: 250px;
-            height: auto;
-
         }
        
         .logo-pescar_acerca:hover {
             width: 260px;
-            height: auto;
         }
         
-
-
-
         .logo-jp_acerca {
           
             width: 335px;
-            height: auto;
+           
             
         }
         .logo-jp_acerca:hover {
             
-            width: 350px;
-            height: auto;
+            width: 335px;
+        
             
         }
 
 
         .logo-loma_acerca {
             width: 140px;
-            height: auto;
+           
           
         }
         
         .logo-loma_acerca:hover {
-            width: 145px;
-            height: auto;
+            width: 140px;
+            
            
         }
+        .logo-mecenazgo_acerca {
+            width: 125px;
+           
+        }
+        .logo-mecenazgo_acerca:hover {
+            width: 125px;
+           
+        }
+
+
 
 
         .vision_acerca p {
@@ -1133,7 +1397,7 @@ main {
         
         .intro_acerca p {
             width: 65%;
-            font-size: 25px;
+            font-size: 24px;
         }
         
         .img-1_acerca {
@@ -1157,6 +1421,29 @@ main {
             width: 240px;
             height: auto;
         }
+
+
+
+
+        
+    .card_acerca {
+    
+        width: 270px;
+       
+    }
+    
+
+    .card_acerca p {
+    font-size: 18px;
+    
+}
+
+.card_acerca .front h3 {
+    
+    font-size: 22px;
+    
+}
+
 }   
 
 
@@ -1166,7 +1453,7 @@ main {
     
    .intro_acerca p {
     max-width: 800px;
-    font-size: 25px;
+   
 }
 
 .img-1_acerca {
