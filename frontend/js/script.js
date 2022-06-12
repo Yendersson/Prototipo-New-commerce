@@ -53,5 +53,266 @@ for (let i = 0; i < accordionBtn.length; i++) {
 }
 }
 
+
+//NAVIGATIONS
+function cargar(url, etiqueta, adicional, adicional1){
+    let xhr = ajax(url);
+    xhr.addEventListener('load', ()=>{
+        if(xhr.status == 200){
+            etiqueta.innerHTML = xhr.response;
+            if(adicional){
+                adicional()
+            }
+            if(adicional1){
+                adicional1()
+            }
+        }
+    })
+}
+
+function navegar(){
+    botons()
+    modal()
+    filtro()
+    input()
+    const links = document.querySelectorAll('.select');
+    console.log(links)
+
+    links.forEach(link => {
+        link.addEventListener('click', e=>{
+            e.preventDefault();
+            console.log(link.dataset.id);
+            let archivo = `vistas/${link.dataset.id}.html`;
+            let xhr = ajax(archivo);
+            xhr.addEventListener('load', ()=>{
+                if(xhr.status == 200){
+                    _main.innerHTML = xhr.response;
+                    datos()
+                    // productos()
+                    // handle()
+                }
+            })
+        })
+    });
+}
+
+
+function productos(){
+    const articulos = document.querySelectorAll('.busqueda-articulo-desktop');
+    console.log(articulos);
+    articulos.forEach(producto => {
+        producto.addEventListener('click', ()=> {
+            let id = producto.dataset.id;
+            console.log(id);
+            let xhr = ajax(`vistas/productos.html`)
+            xhr.addEventListener('load', ()=>{
+                if(xhr.status == 200){
+                    _main.innerHTML = xhr.response;
+                    datos(id)
+                    
+                }
+            })
+        })
+    })
+
+}
+
+function handle(datos){
+    let plantilla = _main.innerHTML;
+    let compilar = Handlebars.compile(plantilla);
+    document.querySelector('#template-compilado').innerHTML = compilar(datos);
+    productos()
+
+}
+
+function datos(id){
+    if(id){
+        let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/'+ id);
+        xhrData.addEventListener('load', ()=>{
+            if(xhrData.status === 200){
+                let parseoJson = JSON.parse(xhrData.response);
+                console.log(parseoJson)
+                handle(parseoJson);
+                imgProductos()
+    
+            }
+        })
+
+    }else{
+        let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products');
+        xhrData.addEventListener('load', ()=>{
+            if(xhrData.status === 200){
+                let parseoJson = JSON.parse(xhrData.response);
+                console.log(parseoJson)
+                // const filtro = parseoJson.filter(elemento => elemento.categoria == categorias);
+                // console.log(filtro)
+                handle(parseoJson);
+                faq()
+            }
+        })
+    }
+    
+    }
+
+function input(){
+    const buscar = document.querySelector('#search');
+    let btnBuscar = document.querySelector('#search-btn');
+
+    btnBuscar.addEventListener('click', ()=>{
+        if(!buscar.value == ''){
+           
+            cargar('vistas/busqueda.html', _main, datosBuscar(buscar.value));
+        }else{
+            alert('vacio');
+        }
+    })
+}
+
+
+function filtro(){
+    let categorias = document.querySelectorAll('.filtro');
+    categorias.forEach(cat => {
+        cat.addEventListener('click', (e)=>{
+            e.preventDefault()
+            let categoria = cat.dataset.id;
+            cargar('vistas/busqueda.html', _main, datosFiltro(categoria))
+        })
+    })
+}
+
+function datosFiltro(categoria){
+    let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/');
+    xhrData.addEventListener('load', ()=>{
+        if(xhrData.status === 200){
+            let parseoJson = JSON.parse(xhrData.response);
+            console.log(parseoJson)
+            const filtro = parseoJson.filter(elemento => elemento.categoria == categoria);
+            handle(filtro);
+}
+    })
+}
+
+function datosBuscar(categoria){
+    let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/');
+    xhrData.addEventListener('load', ()=>{
+        if(xhrData.status === 200){
+            let parseoJson = JSON.parse(xhrData.response);
+            console.log(parseoJson)
+            const filtro = parseoJson.filter(elemento => elemento.nombre == categoria);
+            handle(filtro);
+}
+    })
+}
+
+
+
+function ajax(url, method = 'get'){
+    let xhr = new XMLHttpRequest;
+    xhr.open(method, url);
+    xhr.send();
+
+    return xhr;
+}
+
+
+//MODAL
+
+function modal(){
+
+    let modal = document.querySelectorAll('.inicio');
+    modal.forEach(boton =>{
+        boton.addEventListener('click', ()=>{
+            document.querySelector('.modal').classList.add('modal-show');
+        })
+    })
+    
+    
+    document.querySelector('#close').addEventListener('click', (e)=>{
+        e.preventDefault();
+        document.querySelector('.modal').classList.remove('modal-show');
+    
+    })
+    
+    document.querySelector('#form').addEventListener('submit', (e)=>{
+        e.preventDefault()
+    })
+    }
+
+    login()
+
+    function bienvenida(){
+        if(localStorage.getItem('user')){
+        document.querySelector('#welcome-user').innerHTML = `Hola ${localStorage.getItem('user')}`
+        }
+    }
+    // PRODUCTOS
+
+    function imgProductos(){
+        let imgP = document.querySelector(".imgPrincipalProducto");
+        let imgUno = document.querySelector(".imgSrc1");
+        let imgDos = document.querySelector(".imgSrc2");
+        let imgTres = document.querySelector(".imgSrc3");
+        let imgCuatro = document.querySelector(".imgSrc4");
+       
+       // por medio del evento click intercambiamos el src de cada imagen 
+       // y de esa manera visulizar la imagen solicitada.
+       
+        imgUno.addEventListener("click",
+         function (){ 
+          imgP.src = imgUno.src
+       })
+        imgDos.addEventListener("click",
+         function (){ 
+          imgP.src = imgDos.src
+       })
+        imgTres.addEventListener("click",
+         function (){ 
+          imgP.src = imgTres.src
+       })
+        imgCuatro.addEventListener("click",
+         function (){ 
+          imgP.src = imgCuatro.src
+       })
+        imgP.addEventListener("click",
+         function (){ 
+          imgP.src = imgUno.src
+       })
+       }
+
+       //FAQ
+
+       function faq(){
+
+        let question = document.querySelectorAll(".question ");
+        let btnDropdown = document.querySelectorAll(".question .more");
+        let answer = document.querySelectorAll(".answer");
+        let parrafo = document.querySelectorAll(".answer p");
+        
+        for( let i = 0 ; i < btnDropdown.length; i ++) {
+        
+            let altoParrafo = parrafo[i].clientHeight;
+            let switchc = 0;
+        
+        btnDropdown[i].addEventListener("click", () => {
+        
+            if (switchc == 0 ) {
+        
+                answer[i].style.height =  altoParrafo +'px'; 
+                question[i].style.marginBottom ="10px"
+                btnDropdown[i].innerHTML = "<i>-</i>" ;
+                switchc ++;
+            }
+        
+            else if (switchc == 1) {
+        
+                answer[i].style.height = "0";
+                question[i].style.marginBottom = "0" ;
+                btnDropdown[i].innerHTML = "<i>+</i>";
+                switchc --; 
+            }
+        })
+        }
+        }
+
   
   

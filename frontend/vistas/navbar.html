@@ -56,15 +56,15 @@
   <div class="header-main">
       <div class="container container-flex">
 
-    <a href="#" class="header-logo">
-          <img src="img/protofinal (4).png" class="logo" alt="puma-logo">
+    <a href="#" class="header-logo select" data-id="home">
+          <img src="img/protofinal (4).png" class="logo" alt="puma-logo" data-id="home">
         </a> 
 
           <div class="header-search-container">
 
-              <input type="search" name="search" class="search-field" placeholder="Buscar productos...">
+              <input type="search" name="search" class="search-field" id="search" placeholder="Buscar productos...">
 
-              <button class="search-btn">
+              <button class="search-btn" id="search-btn">
                   <ion-icon name="search-outline"></ion-icon>
               </button>
 
@@ -78,7 +78,7 @@
 
               <button class="action-btn carrito" data-id="Carrito">
                   <ion-icon name="cart-outline"></ion-icon>
-                  <span class="count">0</span>
+                  <span class="count">!</span>
               </button>
 
           </div>
@@ -93,19 +93,19 @@
           <ul class="desktop-menu-category-list">
 
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="home">Inicio</a>
+                  <a href="#" class="menu-title select" data-id="home">Inicio</a>
               </li>
 
               <!-------------------- DASHBOARD/CATEGORIES -------------------->
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="busqueda">Categorias</a>
+                  <a href="#" class="menu-title" >Categorias</a>
       
                   <div class="dropdown-panel">
       
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title">
-                        <a href="#">Ropa y accesorios</a>
+                        <a href="#" class="filtro" data-id="ropa-accesorios">Ropa y accesorios</a>
                       </li>
       
                       <!-- <li class="panel-list-item">
@@ -133,7 +133,7 @@
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title">
-                        <a href="#">Electrodomesticos y tecnologia</a>
+                        <a href="#" class="filtro" data-id="electrodomestico-tecnologia">Electrodomesticos y tecnologia</a>
                       </li>
       
                       <!-- <li class="panel-list-item">
@@ -161,7 +161,7 @@
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title">
-                        <a href="#">Hogar, muebles y jardin</a>
+                        <a href="#" class="filtro" data-id="hogar-muebles-jardin">Hogar, muebles y jardin</a>
                       </li>
       
                       <!-- <li class="panel-list-item">
@@ -189,7 +189,7 @@
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title">
-                        <a href="#">Arte, libros y revistas</a>
+                        <a href="#" class="filtro" data-id="arte-libros-revista">Arte, libros y revistas</a>
                       </li>
       
                       <!-- <li class="panel-list-item">
@@ -219,7 +219,7 @@
 
                 <!-------------------- MENU LISTED -------------------->
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="ofertas">Ofertas</a>
+                  <a href="#" class="menu-title select" data-id="ofertas">Ofertas</a>
 
                   <ul class="dropdown-list">
 
@@ -244,19 +244,19 @@
               </li>
 
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="busqueda">Comprar</a>
+                  <a href="#" class="menu-title select" data-id="busqueda">Comprar</a>
               </li>
 
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="vender">Vender</a>
+                  <a href="#" class="menu-title select" data-id="vender">Vender</a>
               </li>
 
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="faq">Ayuda</a>
+                  <a href="#" class="menu-title select" data-id="faq">Ayuda</a>
               </li>
 
               <li class="menu-category">
-                  <a href="#" class="menu-title" data-id="acerca">Sobre nosotros</a>
+                  <a href="#" class="menu-title select" data-id="acerca">Sobre nosotros</a>
               </li>
 
           </ul>
@@ -303,7 +303,7 @@
       <ul class="mobile-menu-category-list">
 
           <li class="menu-category">
-              <a href="#" class="menu-title" data-id="home">Inicio</a>
+              <a href="#" class="menu-title select" data-id="home">Inicio</a>
           </li>
 
           <!-------------------- MENU LISTED -------------------->
@@ -312,7 +312,7 @@
 
               <button class="accordion-menu" data-accordion-btn>
 
-                  <p class="menu-title" data-id="busqueda">Categorías</p>
+                  <p class="menu-title" >Categorías</p>
 
                   <div>
                       <ion-icon name="add-outline" class="add-icon"></ion-icon>
@@ -324,19 +324,19 @@
               <ul class="submenu-category-list" data-accordion>
 
                   <li class="submenu-category">
-                      <a href="#" class="submenu-title">Ropa y accesorios</a>
+                      <a href="#" class="submenu-title filtro" data-id="ropa-accesorios">Ropa y accesorios</a>
                   </li>
 
                   <li class="submenu-category">
-                      <a href="#" class="submenu-title">Electrodomesticos y tecnologia</a>
+                      <a href="#" class="submenu-title filtro" data-id="electrodomestico-tecnologia" >Electrodomesticos y tecnologia</a>
                   </li>
 
                   <li class="submenu-category">
-                      <a href="#" class="submenu-title">Hogar, muebles y jardin</a>
+                      <a href="#" class="submenu-title filtro" data-id="hogar-muebles-jardin">Hogar, muebles y jardin</a>
                   </li>
 
                   <li class="submenu-category">
-                      <a href="#" class="submenu-title">Arte, libros y revistas</a>
+                      <a href="#" class="submenu-title filtro" arte-libros-revista>Arte, libros y revistas</a>
                   </li>
 
                   <li class="submenu-category">
@@ -351,7 +351,7 @@
 
               <button class="accordion-menu" data-accordion-btn>
 
-                  <p class="menu-title" data-id="ofertas">Ofertas</p>
+                  <p class="menu-title select" data-id="ofertas">Ofertas</p>
 
                   <div>
                       <ion-icon name="add-outline" class="add-icon"></ion-icon>
@@ -383,19 +383,19 @@
           </li>
 
           <li class="menu-category">
-              <a href="#" class="menu-title" data-id="busqueda">Comprar</a>
+              <a href="#" class="menu-title select" data-id="busqueda">Comprar</a>
           </li>
 
           <li class="menu-category">
-              <a href="#" class="menu-title" data-id="vender">Vender</a>
+              <a href="#" class="menu-title select" data-id="vender">Vender</a>
           </li>
 
           <li class="menu-category">
-              <a href="#" class="menu-title" data-id="faq">Ayuda</a>
+              <a href="#" class="menu-title select" data-id="faq">Ayuda</a>
           </li>
 
           <li class="menu-category">
-              <a href="#" class="menu-title" data-id="acerca">Sobre nosotros</a>
+              <a href="#" class="menu-title select" data-id="acerca">Sobre nosotros</a>
           </li>
 
       </ul>

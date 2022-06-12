@@ -1,105 +1,167 @@
+const _main = document.querySelector('#template');
 const _header = document.querySelector('header');
-const _main = document.querySelector('main');
 const _footer = document.querySelector('footer')
 
-
-let xhr = ajax('vistas/navbar.html');
-xhr.addEventListener('load', ()=>{
-    xhr.status == 200? _header.innerHTML = xhr.response: console.log('error')
-    modal();
-    botons();
-    navegar();
-    carrito();
-    historial();
-})
-
-let xhr2 = ajax('vistas/footer.html');
-xhr2.addEventListener('load', ()=>{
-    xhr2.status == 200? _footer.innerHTML = xhr2.response: console.log('error')
-})
-
-let xhr3 = ajax('vistas/home.html');
-     history.pushState('','', 'home.html')
-xhr3.addEventListener('load', ()=>{
-    xhr3.status == 200? _main.innerHTML = xhr3.response: console.log('error')
-})
-
-console.log('url', location.pathname);
-
-//FUNCTIONS
+cargar('vistas/navbar.html', _header, navegar);
+cargar('vistas/home.html', _main, handle, bienvenida)
+cargar('vistas/footer.html', _footer);
 
 
-function navegar(){
-    const links = document.querySelectorAll('.menu-title');
-    links.forEach(link =>{
-        link.addEventListener('click', e=>{
-            e.preventDefault();
-            //console.log(link.dataset.id);
-            
-            let archivo = 'vistas/' + link.dataset.id + '.html';
-            let xhrLinks = ajax(archivo);
-            
-            console.log('url', location.pathname.slice(10))
-            history.pushState('','', link.dataset.id + '.html')
+// function cargar(url, etiqueta, adicional){
+//     let xhr = ajax(url);
+//     xhr.addEventListener('load', ()=>{
+//         if(xhr.status == 200){
+//             etiqueta.innerHTML = xhr.response;
+//             if(adicional){
+//                 adicional()
+//             }
+//         }
+//     })
+// }
 
-            xhrLinks.addEventListener('load', ()=>{
-                xhrLinks.status == 200? _main.innerHTML = xhrLinks.response: console.log('error');
-                productos();
-                faq()
-            })
-        })
-    })
-}
+// function navegar(){
+//     botons()
+//     modal()
+//     filtro()
+//     input()
+//     const links = document.querySelectorAll('.select');
+//     console.log(links)
+
+//     links.forEach(link => {
+//         link.addEventListener('click', e=>{
+//             e.preventDefault();
+//             console.log(link.dataset.id);
+//             let archivo = `vistas/${link.dataset.id}.html`;
+//             let xhr = ajax(archivo);
+//             xhr.addEventListener('load', ()=>{
+//                 if(xhr.status == 200){
+//                     _main.innerHTML = xhr.response;
+//                     datos()
+//                     // productos()
+//                     // handle()
+//                 }
+//             })
+//         })
+//     });
+// }
 
 
-function productos(){
-    const _article = document.querySelectorAll('article');
+// function productos(){
+//     const articulos = document.querySelectorAll('.busqueda-articulo-desktop');
+//     console.log(articulos);
+//     articulos.forEach(producto => {
+//         producto.addEventListener('click', ()=> {
+//             let id = producto.dataset.id;
+//             console.log(id);
+//             let xhr = ajax(`vistas/productos.html`)
+//             xhr.addEventListener('load', ()=>{
+//                 if(xhr.status == 200){
+//                     _main.innerHTML = xhr.response;
+//                     datos(id)
+                    
+//                 }
+//             })
+//         })
+//     })
 
-    _article.forEach(articulo => {
-        articulo.addEventListener('click', ()=>{
-            let xhrProducto = ajax('vistas/productos.html')
-            history.pushState('','','productos.html')
-            xhrProducto.addEventListener('load', ()=>{
-                xhrProducto.status == 200? _main.innerHTML = xhrProducto.response: console.log('error');
-                imgProductos()
+// }
 
-            })
-        })
-    })
-}
+// function handle(datos){
+//     let plantilla = _main.innerHTML;
+//     let compilar = Handlebars.compile(plantilla);
+//     document.querySelector('#template-compilado').innerHTML = compilar(datos);
+//     productos()
 
-function carrito(){
-    let links = document.querySelectorAll('.carrito');
-    console.log(links);
-    links.forEach(link =>{
-        link.addEventListener('click', ()=>{
-            let archivo ='vistas/' + link.dataset.id + '.html';
-            let xhrCarrito = ajax(archivo);
-            history.pushState('','','Carrito.html')
-            xhrCarrito.addEventListener('load', ()=>{
-                xhrCarrito.status == 200? document.querySelector('main').innerHTML = xhrCarrito.response: console.log('error');
+// }
 
-            })
+// function datos(id){
+//     if(id){
+//         let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/'+ id);
+//         xhrData.addEventListener('load', ()=>{
+//             if(xhrData.status === 200){
+//                 let parseoJson = JSON.parse(xhrData.response);
+//                 console.log(parseoJson)
+//                 handle(parseoJson);
+//                 imgProductos()
+    
+//             }
+//         })
 
-        })
-    })
-}
+//     }else{
+//         let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products');
+//         xhrData.addEventListener('load', ()=>{
+//             if(xhrData.status === 200){
+//                 let parseoJson = JSON.parse(xhrData.response);
+//                 console.log(parseoJson)
+//                 // const filtro = parseoJson.filter(elemento => elemento.categoria == categorias);
+//                 // console.log(filtro)
+//                 handle(parseoJson);
+//                 faq()
+//             }
+//         })
+//     }
+    
+//     }
 
-function ajax(url, method = 'get'){
-    let xhr = new XMLHttpRequest;
-    xhr.open(method, url);
-    xhr.send()
+// function input(){
+//     const buscar = document.querySelector('#search');
+//     let btnBuscar = document.querySelector('#search-btn');
 
-    return xhr;
-}
-function historial(){
-    window.addEventListener('popstate', ()=>{
-    let historialBack = 'vistas/' + location.pathname.slice(10);
-    console.log(location.pathname.slice(10));
-    console.log(historialBack)
-    let xhrHistorial = ajax(historialBack)
-    xhrHistorial.addEventListener('load', ()=>{
-        xhrHistorial.status == 200? _main.innerHTML = xhrHistorial.response: console.log('error en vuelta de historial');
-    })    
-    })
-}
+//     btnBuscar.addEventListener('click', ()=>{
+//         if(!buscar.value == ''){
+           
+//             cargar('vistas/busqueda.html', _main, datosBuscar(buscar.value));
+//         }else{
+//             alert('vacio');
+//         }
+//     })
+// }
+
+
+// function filtro(){
+//     let categorias = document.querySelectorAll('.filtro');
+//     categorias.forEach(cat => {
+//         cat.addEventListener('click', (e)=>{
+//             e.preventDefault()
+//             let categoria = cat.dataset.id;
+//             cargar('vistas/busqueda.html', _main, datosFiltro(categoria))
+//         })
+//     })
+// }
+
+// function datosFiltro(categoria){
+//     let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/');
+//     xhrData.addEventListener('load', ()=>{
+//         if(xhrData.status === 200){
+//             let parseoJson = JSON.parse(xhrData.response);
+//             console.log(parseoJson)
+//             const filtro = parseoJson.filter(elemento => elemento.categoria == categoria);
+//             handle(filtro);
+// }
+//     })
+// }
+
+// function datosBuscar(categoria){
+//     let xhrData = ajax('https://ncapirest.glitch.me/newcommerce/v1/products/');
+//     xhrData.addEventListener('load', ()=>{
+//         if(xhrData.status === 200){
+//             let parseoJson = JSON.parse(xhrData.response);
+//             console.log(parseoJson)
+//             const filtro = parseoJson.filter(elemento => elemento.nombre == categoria);
+//             handle(filtro);
+// }
+//     })
+// }
+
+
+
+// function ajax(url, method = 'get'){
+//     let xhr = new XMLHttpRequest;
+//     xhr.open(method, url);
+//     xhr.send();
+
+//     return xhr;
+// }
+
+
+

@@ -35,16 +35,18 @@
     <section class="modal">
         <div class="modal-container modal-show">
           <form action="" id="form">
-            <h2>Nombre o Logo</h2>
+            <img src="img/protofinal (4).png" alt="">
+            <!-- <h2>New-Commerce</h2> -->
             <div class="form-inicio">
               <label for="">Nombre o Usuario:</label>
-              <input type="text" placeholder="Nombre o Usuario">
+              <input type="email" name="email" id="email" placeholder="Mail">
               <label for="">Contraseña:</label>
-              <input type="password" name="" id="" placeholder="******">
+              <input type="password" name="password" id="password" placeholder="******">
   
-              <button class="btn-login">Iniciar Sesion</button>
-              <button class="btn-register">Registrate</button>
+              <button class="btn-login" id="btn-login">Iniciar Sesion</button>
+              <span id="alerta" style="color: red; text-align:center"></span>
             </div>
+            <button class="btn-register">Registrate</button>
           </form>
           <a href="#" id="close">Close</a>
         </div>
@@ -52,6 +54,14 @@
 
       
     <main>
+
+      <section id="template-compilado">
+
+      </section>
+
+      <script type="x-handlebars-template" id="template">
+
+      </script>
 
     </main>
 
@@ -61,11 +71,10 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="js/script-modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="js/login.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/main-productos.js"></script>
-    <script src="js/faq.js"></script>
-    <script src="js/acerca.js"></script>
     <script src="js/ajax.js"></script>
 </body>
 </html>

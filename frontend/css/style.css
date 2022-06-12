@@ -250,8 +250,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
   
 .mobile-bottom-navigation .count {
-    background: white;
-    color: black;
+    background-color: red;
+    /* color: red; */
     position: absolute;
     top: 0;
     right: 0;
@@ -726,10 +726,11 @@ footer {
       position: absolute;
       top: -2px;
       right: -3px;
-      background: white;
-      color: black;
+      background: white !important;
+      color: red !important;
       font-size: 12px;
-      font-weight: var(--weight-500);
+      /* font-weight: var(--weight-600); */
+      font-weight: bold;
       line-height: 1;
       padding: 2px 4px;
       border-radius: 20px;

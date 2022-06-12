@@ -127,237 +127,1190 @@
 
 
 /* COMPUTADORAS */
-@media (min-width: 1200px) {
-    .intro {
-         width: 700px; 
-         padding: 50px; 
-        text-align: center;
-       
-    }
-    
-    .intro h1 {
-        padding-bottom: 30px;
-         font-size: 60px;
-    } 
-    
-   
-    .img-1 {
-        position: relative;
-        top: -25px;
-        left: -400px;
-    } 
-    
-    
-    .img-2 {
-        position: absolute;
-        top: 330px;
-        right: 40px;
-    }
-    
+.intro_acerca {
+    width: 700px;  
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 100px;
+   align-items: center;
+   background-image: linear-gradient(#FF7D1B, #ffe11b);
+   position: relative;
+  
+}
 
-    }
+.intro_acerca h1 {
+   padding-bottom: 30px;
+    font-size: 50px;
+} 
 
-    
-    
-.main-acerca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+.intro_acerca p {
+   width: 650px;
+   font-size: 25px;
+}
+
+.intro-2_acerca {
+   padding-top: 80px;
+}
+.img-1_acerca {
+   position: absolute;
+   top: 48%;
+   right: 70%;
+} 
+
+.img-1_acerca img {
+   width: 320px;
+   height: auto;
+}
+.img-2_acerca {
+   position: absolute;
+   top:36%;
+   left: 74%;
+}
+
+
+.img-2_acerca img {
+   width: 255px;
+   height: auto;
+}
+
+
+main {
+margin: 0;
+}
+
+
+
+.main_acerca {
+background-color: white;
+color: rgb(51, 51, 51);
+align-items: center;
+margin: 0;
+
+
 }
 
 /* ---PRIMER SECCIÓN---*/
-.intro {
-    width: 100%;
-    height: 650px;
-    /* width: 700px; */
-    /* padding: 50px; */
-    text-align: center;
+.intro_acerca {
+width: 100%;
+height: 730px; /*650px*/
+/* width: 700px; */
+/* padding: 50px; */
+text-align: center;
+
 }
 
-/* .intro h1 {
-    padding-bottom: 30px;
-     font-size: 60px;
-} */
-
-
-/* .img-1 {
-    position: relative;
-    top: -25px;
-    left: -400px;
-} */
-
-
-/* .img-absolute {
-    position: absolute;
-    top: 330px;
-    right: 40px;
-} */
 
 
 /* ---SEGUNDA SECCIÓN PERFILES---*/
 
-.profiles-section {
-    background-image: linear-gradient(to right bottom,#FF7D1B, #ffe11b);
-    width: 100%;
-    height: 750px;
-    display: grid;
-    grid-template-columns: 350px 350px 350px ;
-    grid-template-rows: 350px;
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
+/* .profiles-section_acerca {
+background-image: linear-gradient( #ffe11b, #FF7D1B);
+*/
+
+.perfiles_acerca {
+   background-image: linear-gradient( #ffe11b, #FF7D1B);
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+}
+.container-perfiles_acerca {
+width: 85%;
+height: auto;
+display: grid;
+justify-content: center;
+align-items: center;
+grid-template-columns: auto auto auto;
+gap: 2% 10%;
+margin: 30px;
 }
 
-.profile {
-    width: 350px;
-    height: 350px;
-    margin-top: 20px;
-    margin-left: 45px;
+.perfil_acerca {
+width: 100%;
+height: auto;
+
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+.imagen-perfil_acerca {
 
-.div-img-profile {
-    margin-top: 5px;
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 5px;
-    box-shadow: 0px 5px 20px black;
-}
-.img-profile {
-    width: 250px;
-    height: 200px;
-    
-}
 
-.article-flex-row {
-    display: flex;
-    margin-left:15px;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+transition: all 0.3s;
+width: 60%;
 
 }
 
-.profile-icons {
- 
-  position: relative;
-  top: 50px;
-  left: 25px;
+
+.imagen-perfil_acerca:hover {
+box-shadow: none;
+transition: all 0.3s;
+} 
+
+
+.imagen-perfil_acerca, .redes_acerca {
+margin: 10px;
 }
-article p {
-    color: white;
-    width: 300px;
-    font-size: 16px;
+.imagen-perfil_acerca img {
+width: 100%;
+height: auto;
+object-fit: cover;
 }
 
-article h2 {
-    color: white;
-    font-size: 23px;
-    font-weight: 400;
-    padding: 5px;
+
+.redes_acerca img {
+transition: all 0.3s;
+
+} 
+.redes_acerca img:hover {
+transition: all 0.3s;
+padding: 0;
+
+} 
+
+
+
+
+.redes_acerca {
+width: 50%;
+height: auto;
+display: flex;
+justify-content: space-around;
+margin-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---TERCERA SECCIÓN PESCAR-JP MORGAN---*/
-.section-pescar {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 750px;
+.section-pescar_acerca {
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 680px;
+background-color: white;
+
+
 }
 
-.section-pescar div {
-    width: 80%;
-    font-size: 24px;
+.section-pescar_acerca div {
+width: 80%;
+font-size: 25px;
 }
 
-.logo-pescar {
-    width: 360px;
-    height: 240px;
+.descrip-pescar_acerca {
+padding-top: 40px;
 }
 
-.logo-jp {
-    width: 420px;
-    height: 155px;
+.logo-pescar_acerca {
+padding: 5px;
+transition: all 0.3s;
 }
-.logo-loma {
-    width: 180px;
-    height: 180px;
+
+.logo-pescar_acerca:hover {
+
+padding: 0;
+transition: all 0.3s;
 }
-.section-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+.logo-jp_acerca {
+padding: 5px;
+transition: all 0.3s;
+width: 380px;
+height: auto;
+
+}
+.logo-jp_acerca:hover {
+padding: 0;
+transition: all 0.3s;
+width: 390px;
+height: auto;
+
+}
+
+.logo-loma_acerca {
+
+padding: 5px;
+transition: all 0.3s;
+}
+
+.logo-loma_acerca:hover {
+
+padding: 0;
+transition: all 0.3s;
+}
+
+.section-flex-row_acerca {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 
 }
 
 /* ---CUARTA SECCIÓN PUMA---*/
 
-.vision {
-    width: 100%;
-    height: 750px;
-    display: grid;
-    /* justify-content: center; */
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 350px;
-    grid-row-gap:40px;
-    grid-column-gap: 0;
+.vision_acerca {
+width: 100%;
+height: 680px;
+/* display: grid;
+grid-template-columns: 50% 50% ;
+grid-template-rows: 350px;
+grid-row-gap:40px;
+grid-column-gap: 0;
+*/
+
+display: flex;
+
+}
+
+.vision-1_acerca {
+display: flex;
+flex-direction: row;
+}
+
+.vision-2_acerca {
+display: flex;
+flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+.vision_acerca div {
+
+width: auto;
+height: 600px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.vision-gradient_acerca {
+background-image: linear-gradient(#FF7D1B, #ffe11b);
+width: 633px;
+height: 390px;
+}
+.vision_acerca h2 {
+font-size: 50px;
+padding-bottom: 15px;
+font-weight: 600;
+
+}
+
+.vision_acerca p {
+margin: 0px 50px 0px 50px; 
+font-size: 25px;
+}
+
+.fondo-1_acerca {
+background-image: url(../img-acerca/children.jpg); 
+background-size: cover;
+background-position: 0px -15px;
+width: 633px;
+height: 390px;
+}
+
+.fondo-2_acerca {
+background-image: url(../img-acerca/notebook.jpg);
+background-size: cover;
+background-position: 0px -25px;
+}
+
+
+
+
+.mision_acerca {
+width: 100%;
+height: 380px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+}
+
+.card_acerca {
+position: relative;
+width: 270px;
+height: 310px;
+font-weight: 300;
+padding: 10px;
+text-align: center;
+
+
+}
+.card_acerca p {
+font-size: 16px;
+
+}
+.card_acerca .face {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 10px;
+overflow: hidden;
+transition: .5s;
+}
+
+.card_acerca .front {
+transform: perspective(600px) rotateY(0deg);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
+background-image: linear-gradient( #ffe11b, #FF7D1B);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card_acerca .front h3 {
+position: absolute;
+font-size: 22px;
+
+}
+
+.card_acerca .back {
+transform: perspective(600px) rotateY(180deg);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
+padding: 20px;
+line-height: 22px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(249, 249, 249)
+
+}
+
+
+.card_acerca:hover .front {
+transform: perspective(600px) rotateY(180deg);
+transition: all 0.7s;
+}
+.card_acerca:hover .back {
+transform: perspective(600px) rotateY(360deg);
+transition: all 0.7s;
+}
+
+
+
+
+/* .vision_acerca button {
+width: 220px;
+height: 50px;
+background-color: #0f5cc8; 
+border-radius: 10px;
+color: white;
+font-weight: bold;
+margin-left: 250px;
+margin-top: 35px;
+transition: all 0.4s;
+}
+.vision_acerca button:hover {
+background-color: #2174d9; 
+transition: all 0.4s;
+} */
+
+
+
+
+/* ================================================================================================================ */
+/* ================================================== RESPONSIVE ================================================= */
+/* ============================================================================================================== */
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 360PX =================================== */
+
+@media (min-width: 360px) {
+
+.container-perfiles_acerca {
+   grid-template-columns: auto;
+   gap: 0% 0%; 
+}
+
+.perfil_acerca {
+   width: 300px;
+height: auto;
+margin:10px;
+}
+.container-perfiles_acerca h2 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+.redes_acerca img {
+   width: 40px;
+   height: auto;
+  padding: 5px;
+
+ } 
+ 
+ .redes_acerca img:hover {
+   width: 35px;
+   
+  
+} 
+ .imagen-perfil_acerca {
+     width: 50%;
+ }
+
+
+.vision_acerca {
+   height: auto;
+}
+.vision_acerca div {
+
+   width: auto;
+   height: 600px;
+ 
+}
+.vision_acerca p {
+   font-size: 13px;
+   margin: 0px 20px 0px 20px;
+}
+.vision_acerca h2 {
+   font-size: 22px;
+}
+
+
+
+.fondo-1_acerca {
+  
+   background-position: 296px 0px;
+ 
+}
+
+.fondo-2_acerca {
+  
+   background-position: -113px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-pescar_acerca p {
+   font-size: 18px;
+}
+
+.logo-pescar_acerca {
+   width: 190px;
+}
+.logo-pescar_acerca:hover {
+   width: 200px;
+}
+.logo-jp_acerca {
+   width: 245px;
+}
+.logo-jp_acerca:hover {
+   width: 255px;
+}
+.logo-loma_acerca {
+   width: 110px;
+}
+.logo-loma_acerca:hover {
+   width: 120px;
+}
+
+
+
+
+
+.intro_acerca {
+   display:inline-block;
+   height: auto;
+}
+.intro_acerca p {
+   font-size: 15px;
+   width: 85%;
+   padding: 5px;
+   margin: 0 auto;
+}
+.intro_acerca h1 {
+   font-size: 33px;
+}
+
+
+.img-1_acerca {
+   top: 53%;
+   right: 38%;
+} 
+
+.img-1_acerca img {
+   width: 221px;
+
+}
+.img-2_acerca {
+   top:76%;
+   left: 60%;
+}
+
+
+.img-2_acerca img {
+   width: 140px;
+ 
+}
+
+.intro-2_acerca p {
+   width: 55%;
+   margin: 5px 0 0 23px;
+}
+}
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
+@media (min-width: 480px) {
+
+.container-perfiles_acerca {
+   grid-template-columns: auto;
+}
+
+.perfil_acerca {
+   width: 300px;
+height: auto;
+}
+.container-perfiles_acerca h2 {
+   font-size: 18px;
    
 }
 
-.vision div {
-    
-    width: 633px;
-    height: 390px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+ .imagen-perfil_acerca {
+     width: 50%;
+ }
+
+
+
+.vision_acerca p {
+   font-size: 14px;
+   
 }
-.vision-gradient {
-    background-image: linear-gradient(#FF7D1B, #ffe11b);
-}
-.vision h2 {
-    font-size: 55px;
-    padding-bottom: 15px;
-    
+.vision_acerca h2 {
+   font-size: 24px;
 }
 
-.vision p {
-    margin: 0px 50px 0px 50px; 
-    font-size: 24px;
+.section-pescar_acerca p {
+   font-size: 18px;
 }
 
-.fondo-1 {
-    background-image: url(../img-acerca/notebook.jpg);
-    background-size: cover;
-    background-position: 0px -95px;
+.logo-pescar_acerca {
+   width: 190px;
+}
+.logo-pescar_acerca:hover {
+   width: 200px;
+}
+.logo-jp_acerca {
+   width: 245px;
+}
+.logo-jp_acerca:hover {
+   width: 255px;
+}
+.logo-loma_acerca {
+   width: 110px;
+}
+.logo-loma_acerca:hover {
+   width: 120px;
 }
 
-.fondo-2 {
-    background-image: url(../img-acerca/children.jpg);
-    background-size: cover;
-    background-position: 0px -75px;
+
+.intro_acerca {
+   display:inline-block;
+}
+.intro_acerca p {
+   font-size: 18px;
+   width: 85%;
+   margin: 0 auto;
+}
+.intro_acerca h1 {
+   font-size: 40px;
 }
 
-.vision button {
-    width: 220px;
-    height: 50px;
-    background-color: #0f5cc8; 
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    margin-left: 250px;
-    margin-top: 35px;
+
+.img-1_acerca {
+   top: 48%;
+   right: 43%;
+} 
+
+.img-1_acerca img {
+   width: 273px;
+
 }
-.vision button:hover {
-    background-color: #2174d9; 
+.img-2_acerca {
+   top:64%;
+   left: 60%;
+}
+
+
+.img-2_acerca img {
+   width: 183px;
+ 
+}
+
+.intro-2_acerca p {
+   width: 55%;
+   margin: 27px 0 0 23px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 570PX =================================== */
+
+@media (min-width: 570px) {
+
+.container-perfiles_acerca {
+   grid-template-columns: auto;
+   
+}
+   .container-perfiles_acerca h2 {
+       font-size: 20px;
+   
+   }
+
+.intro_acerca {
+   display:inline-block;
+   height: 670px;
+}
+.intro_acerca p {
+   font-size: 18px;
+   width: 85%;
+   padding: 5px;
+   margin: 0 auto;
+}
+.intro_acerca h1 {
+   font-size: 40px;
+}
+
+
+.img-1_acerca {
+   top: 43%;
+   right: 48%;
+} 
+
+.img-1_acerca img {
+   width: 273px;
+
+}
+.img-2_acerca {
+   top:58%;
+   left: 60%;
+}
+
+
+.img-2_acerca img {
+   width: 183px;
+ 
+}
+
+.intro-2_acerca p {
+   width: 55%;
+   margin: 27px 0 0 23px;
+}
+
+
+
+
+.fondo-1_acerca {
+  
+   background-position: 358px 0px;
+ 
+}
+
+.fondo-2_acerca {
+  
+   background-position: -60px 0px;
+}
+
+.vision_acerca p {
+   font-size: 15px;
+   
+}
+.vision_acerca h2 {
+   font-size: 25px;
+}
+}
+
+
+
+  
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 670PX =================================== */
+
+@media (min-width: 670px) {
+
+.imagen-perfil_acerca {
+   width: 55%;
+}
+
+.redes_acerca img {
+   width: 42px;
+   height: auto;
+  padding: 5px;
+
+ } 
+ 
+ .redes_acerca img:hover {
+   width: 37px;
+   
+  
+} 
+ .container-perfiles_acerca h2 {
+   font-size: 21px;
+
+}
+
+.intro_acerca {
+   display:inline-block;
+   height: 700px;
+}
+.intro_acerca p {
+   font-size: 21px;
+   width: 85%;
+   padding: 5px;
+   margin: 0 auto;
+}
+.intro_acerca h1 {
+   font-size: 43px;
+}
+
+
+.img-1_acerca {
+   top: 44%;
+   right: 53%;
+} 
+
+.img-1_acerca img {
+   width: 296px;
+
+}
+.img-2_acerca {
+   top:62%;
+   left: 69%;
+}
+
+
+.img-2_acerca img {
+   width: 204px;
+ 
+}
+
+.intro-2_acerca p {
+   width: 65%;
+   margin: 42px 0 0 23px;
+}
+
+
+.fondo-1_acerca {
+  
+   background-position: 388px 0px;
+ 
+}
+
+.fondo-2_acerca {
+  
+   background-position: -25px 0px;
+}
+
+.vision_acerca p {
+   font-size: 16px;
+   
+}
+.vision_acerca h2 {
+   font-size: 26px;
+}
+}
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 768PX =================================== */
+
+@media (min-width: 768px) {
+
+.container-perfiles_acerca {
+   grid-template-columns: auto auto;
+   gap: 0% 10%; 
+}
+
+.container-perfiles_acerca h2 {
+   font-size: 22px;
+
+}
+.imagen-perfil_acerca {
+   width: 60%;
+}
+.redes_acerca img {
+   width: 44px;
+   height: auto;
+  padding: 5px;
+
+ } 
+
+ .redes_acerca img:hover {
+   width: 39px;
+   
+  
+} 
+
+
+.vision_acerca div {
+
+   width: auto;
+   height: 680px;
+}
+.intro_acerca h1 {
+  padding-bottom: 30px;
+   font-size: 14px;
+} 
+
+.fondo-1_acerca {
+  
+background-position: 0px 0px;
+
+}
+
+.fondo-2_acerca {
+
+background-position: 0px 0px;
+}
+
+.vision_acerca p {
+font-size: 18px;
+
+}
+.vision_acerca h2 {
+font-size: 28px;
+}
+
+
+
+
+
+
+.intro_acerca p {
+font-size: 23px;
+width: 85%;
+padding: 5px;
+margin: 0 auto;
+}
+.intro_acerca h1 {
+font-size: 45px;
+}
+
+
+.img-1_acerca {
+top: 43%;
+right: 54%;
+} 
+
+.img-1_acerca img {
+width: 326px;
+
+}
+.img-2_acerca {
+top:62%;
+left: 69%;
+}
+
+
+.img-2_acerca img {
+width: 214px;
+
+}
+
+.intro-2_acerca p {
+width: 68%;
+margin: 42px 0 0 23px;
+}
+}
+
+
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 1024PX =================================== */
+
+@media (min-width: 1024px) {
+
+.container-perfiles_acerca {
+   grid-template-columns: auto auto auto;
+   gap: 2% 2%;
+}
+
+
+
+  .intro_acerca h1 {
+      padding-bottom: 30px;
+       font-size: 50px;
+  } 
+
+
+
+.intro_acerca p {
+   font-size: 24px;
+   width: 70%;
+   padding: 5px;
+   margin: 0 auto;
+}
+.intro_acerca h1 {
+   font-size: 50px;
+}
+
+
+.img-1_acerca {
+   top: 42%;
+   right: 64%;
+} 
+
+.img-1_acerca img {
+   width: 321px;
+
+}
+.img-2_acerca {
+   top:36%;
+   left: 79%;
+}
+
+
+.img-2_acerca img {
+   width: 209px;
+ 
+}
+
+.intro-2_acerca p {
+   width: 70%;
+   margin: 0 auto;
+}
+
+.fondo-1_acerca {
+  
+   background-position: 100% 100%;
+ 
+}
+
+.fondo-2_acerca {
+  
+   background-position: 100% 100%;
+}
+
+.vision_acerca p {
+   font-size: 20px;
+   
+}
+.vision_acerca h2 {
+   font-size: 30px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================== RESPONSIVE FOR SCREENS LARGER THAN 1200PX =================================== */
+
+
+@media (min-width: 1200px) {
+
+.container-perfiles_acerca {
+   
+   gap: 1% 8%;
+}
+
+.container-perfiles_acerca h2 {
+   font-size: 23px;
+
+}
+.imagen-perfil_acerca {
+   width: 63%;
+}
+
+.redes_acerca img {
+   width: 46px;
+   height: auto;
+  padding: 5px;
+
+ } 
+ .redes_acerca img:hover {
+   width: 42px;
+   
+  
+} 
+       .vision_acerca div {
+       width: auto;
+   }
+   
+
+
+   .section-pescar_acerca p {
+       
+       font-size: 23px;
+   }
+
+
+
+   .logo-pescar_acerca {
+       width: 250px;
+       height: auto;
+
+   }
+  
+   .logo-pescar_acerca:hover {
+       width: 260px;
+       height: auto;
+   }
+   
+
+
+
+   .logo-jp_acerca {
+     
+       width: 335px;
+       height: auto;
+       
+   }
+   .logo-jp_acerca:hover {
+       
+       width: 350px;
+       height: auto;
+       
+   }
+
+
+   .logo-loma_acerca {
+       width: 140px;
+       height: auto;
+     
+   }
+   
+   .logo-loma_acerca:hover {
+       width: 145px;
+       height: auto;
+      
+   }
+
+
+   .vision_acerca p {
+       font-size: 22px;
+       
+   }
+   .vision_acerca h2 {
+       font-size: 32px;
+   }
+   
+   .intro_acerca p {
+       width: 65%;
+       font-size: 25px;
+   }
+   
+   .img-1_acerca {
+       
+       top: 44%;
+       right: 69%;
+   } 
+   
+   .img-1_acerca img {
+       width: 333px;
+       height: auto;
+   }
+   .img-2_acerca {
+       
+       top:32%;
+       left: 78%;
+   }
+   
+   
+   .img-2_acerca img {
+       width: 240px;
+       height: auto;
+   }
+}   
+
+
+
+
+@media (min-width: 1370px) {
+
+.intro_acerca p {
+max-width: 800px;
+font-size: 25px;
+}
+
+.img-1_acerca {
+
+top: 44%;
+right: 69%;
+} 
+
+.img-1_acerca img {
+width: 333px;
+height: auto;
+}
+.img-2_acerca {
+
+top:32%;
+left: 78%;
+}
+
+
+.img-2_acerca img {
+width: 240px;
+height: auto;
+}
+
 }

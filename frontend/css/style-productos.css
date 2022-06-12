@@ -6,7 +6,10 @@ esto es main de productos*/
 
 /*+++++++++ mobile ++++++++*/
 #mainProducto{
-    background: rgba(255, 181, 82,0.3);
+    /* background: rgba(255, 181, 82,0.3); */
+    width: 80%;
+    margin: auto;
+    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -33,6 +36,9 @@ esto es main de productos*/
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.imgPrincipalProducto{
+    width: 100%;
+}
 
 .divGaleryProducto{
     display: flex;
@@ -42,6 +48,7 @@ esto es main de productos*/
 
 .imgMinProducto{
     margin: .3em ; 
+    border: 1px solid silver;
 }
 
 /* efecto escalable imagenes minimizadas  */

@@ -1,35 +1,36 @@
 <section id="mainProducto">
     <div class="containerMainProducto">
+      
       <div class="containerProducto">
         <div class="divImagesProducto">
           <div class="divImgProducto">
-            <img src="img-tv/tv-2.webp" alt="#" class="imgPrincipalProducto">
+            <img src="{{imgUrl.url1}}" alt="#" class="imgPrincipalProducto">
           </div>
           <div class="divGaleryProducto">
             <div class="imgMinProducto">
-              <img src="img-tv/tv-1.webp" alt="#" class="imgSrc1">
+              <img src="{{imgUrl.url1}}" alt="#" class="imgSrc1">
             </div>
             <div class="imgMinProducto">
-              <img src="img-tv/tv-3.webp" alt="#" class="imgSrc2">
+              <img src="{{imgUrl.url2}}" alt="#" class="imgSrc2">
             </div>
             <div class="imgMinProducto">
-              <img src="img-tv/tv-4.webp" alt="#" class="imgSrc3">
+              <img src="{{imgUrl.url3}}" alt="#" class="imgSrc3">
             </div>
             <div class="imgMinProducto">
-              <img src="img-tv/tv-5.webp" alt="#" class="imgSrc4">
+              <img src="{{imgUrl.url4}}" alt="#" class="imgSrc4">
             </div>
           </div>
         </div>
         <div class="containerCompraProducto">
           <div class="informacionCompraProducto">
             <div class="nombreProducto">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi </p>
+              <p>{{nombre}} </p>
             </div>
             <div class="valorProducto">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi </p>
+              <p>descipcion: {{descripcion}} </p>
             </div>
             <div class="descriptionProducto">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi </p>
+              <p>precio: {{precio}} $ </p>
             </div>
           </div>
           <div class="agregarEnCarritoProducto">
@@ -37,5 +38,8 @@
           </div>
         </div>
       </div>
+      
     </div>
   </section>
+
+  <script src="js/main-productos.js"></script>
