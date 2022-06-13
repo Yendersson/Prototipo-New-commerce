@@ -1,0 +1,70 @@
+/*+++++++++ Esto es Reporta un Problema  ++++++++*/
+/* main {
+    display: grid;
+    justify-content: center;
+} */
+
+.containerRP{
+    padding: .6em;
+    margin: 1em;
+    width: auto;
+    overflow: hidden; 
+}
+
+.h1RP, .h2RP{
+    text-align: center;
+    margin-bottom: .8em;
+    font-weight: 500;
+    cursor: default;
+}
+.h2RP{
+    margin: auto;
+    font-weight: 400;
+}
+.formRP{
+    padding-left: 12%;
+    padding-right: 10%;
+}
+
+.formRP p {
+    margin-bottom: 1.5em;
+}
+
+.formRP p input, textarea{
+    border: none;
+    background-color: #f3a76d89;
+    border-radius: .5em;
+    padding: 0 .4em; 
+    overflow: hidden; 
+}
+
+textarea{
+    width: 100%;
+}
+
+.btnRP {
+    display: flex;
+    justify-content: center;
+    margin-top: .7em;
+}
+
+.btnRP button{
+    background-color: #FF7D1B;
+    padding: 0 1.5em;
+    border-radius: .4em;
+}
+
+#btnRP:hover{
+color: whitesmoke;
+}
+
+
+.containerRPjs{
+     display: flex ;
+    height: 300px ;
+    background-color: #d4c4b87b;
+    justify-content: center;
+    padding: .6em;
+    cursor: default;
+    overflow: hidden;
+}

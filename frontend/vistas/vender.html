@@ -1,0 +1,37 @@
+
+    <h2>Vender Producto</h2>
+    <section class="vender-formulario">
+        <form action="https://ncapirest.glitch.me/newcommerce/v1/products" method="post" enctype="multipart/form-data">
+            <select name="categoria" id="categoria">
+                <option value="ropa-accesorios">Ropa y Accesorios</option>
+                <option value="electrodomestico-tecnologia">Electrodomesticos y Tecnologia</option>
+                <option value="hogar-muebles-jardin">Hogar, Muebles y Jardin</option>
+                <option value="arte-libros-revista">Arte, libros y revistas</option>
+            </select>
+
+            <label for="nombre">Nombre:</label>
+            <input class="vender-input" type="text" id="nombre" name="nombre">
+
+            <label for="precio">Precio:</label>
+            <input class="vender-input" type="number" id="precio" name="precio">
+
+            <label for="descripcion">Descripcion:</label>
+            <input class="vender-input" type="text" id="descripcion" name="descripcion">
+
+            <label for="estado">Estado:</label>
+            <input type="radio" name="estado" id="estado" value="true">Nuevo
+            <input type="radio" name="estado" id="estado" value="false">Usado
+
+            <label for="ubicacion">Ubicacion:</label>
+            <input class="vender-input" type="text" id="location" name="location">
+
+            <label for="image">Imagen:</label>
+            <input type="file" class="vender-file" name="image" id="image" multiple>
+
+            <label for="usuario">Vendido por:</label>
+            <input class="vender-input" type="text" id="usuario" name="usuario">
+
+            <button class="vender-submit">Cargar</button>
+        </form>
+    </section>
+    

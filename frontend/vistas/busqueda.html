@@ -1,0 +1,54 @@
+
+
+    <!-------------------- MAIN -------------------->
+ 
+        <h2 class="busqueda-title-results-search">Resultados por: Categoria</h2>
+
+
+
+        <!----------------MAIN DESKTOP---------------------------  -->
+
+        <section class="busqueda-contenido-desktop">
+          <div>
+          <div class="busqueda-filter-order-desktop">
+            <h3>Ordenar</h3>
+            <hr>
+            <p class="busqueda-filter"><a href="">A-Z</a></p>
+            <p class="busqueda-filter"><a href="">Z-A</a></p>
+            <p class="busqueda-filter"><a href="">#numeral</a></p>
+            <p class="busqueda-filter"><a href="">123</a></p> 
+            
+            <h3>Filtrar</h3>
+            <hr>
+            <p class="busqueda-filter" ><a href="">Precio</a></p>
+            <p class="busqueda-filter"><a href="">Nuevo</a></p>
+            <p class="busqueda-filter"><a href="">Usado</a></p>
+            <p class="busqueda-filter"><a href="">Talla</a></p>
+          </div>
+        </div>
+
+          
+          <div class="busqueda-productos-desktop">
+
+             {{#each this}} 
+            
+            <article class="busqueda-articulo-desktop" data-id="{{_id}}">
+              <div class="contenedor-img-api">
+               <img src="{{imgUrl.url1}}" alt="">
+              </div>
+               <div class="busqueda-producto-description-desktop">
+                 <h3>{{nombre}}</h3>
+                <p>Precio: {{precio}}</p>
+                <span>Vendido por:{{usuario}}</span>
+               </div>
+              
+            </article>
+            {{/each}}
+        
+        </section>
+       <!-- comunicacion con el carrito Pablito -->
+       <!-- Intentar hacer un login -->
+       <!-- Responsive grid -->
+  
+
+    

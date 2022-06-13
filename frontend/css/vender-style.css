@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+}
+
+.vender-formulario{
+
+    width: 95%;
+    background-color: white;
+    margin:20px auto;
+    padding: 2em 1em;
+}
+
+
+
+label{
+    display: block;
+    margin: 10px 0;
+}
+
+.vender-input, select{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    background:#eee;
+}
+
+.vender-submit{
+    display: block;
+    background-color: green;
+    color: white;
+    margin: 10px auto;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.vender-file{
+    width: 100%;
+}
+
+@media (min-width: 375px){
+
+    .vender-formulario{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 500px){
+    .vender-formulario{
+        width: 85%;
+    }
+}
+
+@media (min-width: 768px){
+    .vender-formulario{
+        width: 70%;
+    }
+}
+
+@media (min-width:1024px){
+    .vender-formulario{
+        width: 60%;
+    }
+}
+
+
+
+
+
+

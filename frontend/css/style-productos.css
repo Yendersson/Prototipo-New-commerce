@@ -1,0 +1,141 @@
+
+
+ /************************************
+esto es main de productos*/
+
+
+/*+++++++++ mobile ++++++++*/
+#mainProducto{
+    /* background: rgba(255, 181, 82,0.3); */
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.containerMainProducto{ 
+    width: 90%; 
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+
+.containerProducto{
+    margin-top: 2em; 
+}
+
+
+.divImgProducto{
+    text-align: center;
+}
+
+.imgPrincipalProducto{
+    display: inline;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.imgPrincipalProducto{
+    width: 100%;
+}
+
+.divGaleryProducto{
+    display: flex;
+    justify-content: center;
+}
+
+
+.imgMinProducto{
+    margin: .3em ; 
+    border: 1px solid silver;
+}
+
+/* efecto escalable imagenes minimizadas  */
+.imgMinProducto:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.imgMinProducto >img{
+    width: 2em;
+}
+
+.containerCompraProducto{
+    text-align: center;
+    background: rgba(245, 245, 245,.5);
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 #f7610657;
+}
+
+.containerCompraProducto > .informacionCompraProducto > div > p {
+    margin: 1em 0 1em 0;
+}
+
+
+.agregaAlCarritoProducto{
+    display: inline;
+    background: #FF7D1B;
+    border-radius: 1.5em; 
+    padding: .6em;
+    
+} 
+
+.informacionCompraProducto{
+    padding: 2em 1em 0 1em;
+}
+
+
+
+
+@media (min-width: 570px) {
+    
+    /* ========================== MAIN PRODUCTOS====================== */
+    .imgPrincipalProducto {
+    /* max-width: 500px; */
+    min-height: 400px;}
+            
+        
+        .imgMinProducto >img{
+            width: 4em;
+        }
+}
+    
+    
+    
+@media (min-width: 1024px){
+ 
+        .containerCompraProducto{
+            padding: 5em 0 0em 0;
+        }
+ 
+        .containerProducto{
+            display: flex; 
+        }
+        
+        .containerCompraProducto{
+            border-radius: 2em;
+            margin: 0 3em 5em 3em;
+        }
+
+        .imgPrincipalProducto {
+            max-height: 600px;
+            min-width: 500px;}
+}
+
+
+@media (min-width: 1200px){
+     .containerProducto {
+   justify-content: space-around
+    }  
+    .divImgProducto{
+    width: 600px;
+    }
+    
+    .imgPrincipalProducto{
+        width: 100%;
+    }
+ 
+    
+}  
