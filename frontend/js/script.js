@@ -88,6 +88,7 @@ function navegar(){
                 if(xhr.status == 200){
                     _main.innerHTML = xhr.response;
                     datos()
+                    
                     // productos()
                     // handle()
                 }
@@ -148,6 +149,7 @@ function datos(id){
                 // console.log(filtro)
                 handle(parseoJson);
                 faq()
+                bienvenida()
             }
         })
     }
@@ -214,6 +216,10 @@ function ajax(url, method = 'get'){
     return xhr;
 }
 
+function carrito(){
+// CARRITO
+}
+
 
 //MODAL
 
@@ -239,10 +245,12 @@ function modal(){
     }
 
     login()
+    register()
 
     function bienvenida(){
         if(localStorage.getItem('user')){
-        document.querySelector('#welcome-user').innerHTML = `Hola ${localStorage.getItem('user')}`
+            if(document.querySelector('#welcome-user'))
+        document.querySelector('#welcome-user').innerHTML = `Hola bienvenid@ ${localStorage.getItem('user')}`
         }
     }
     // PRODUCTOS

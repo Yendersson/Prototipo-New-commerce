@@ -1,8 +1,11 @@
 function login(){
     const form = document.querySelector('#form');
     let btnLogin = document.querySelector('#btn-login');
-
-
+    const formRegistro = document.querySelector('#form-register');
+    const btnRegistro = document.querySelector('#register');
+    const btnIncio = document.querySelector('#login');
+    formRegistro.style.display='none';
+    btnIncio.style.display = 'none';
 
     btnLogin.addEventListener('click', (e)=>{
         e.preventDefault();
@@ -31,4 +34,23 @@ function login(){
         })
 
     })
+
+    btnRegistro.addEventListener('click', ()=>{
+        form.style.display = 'none';
+        formRegistro.style.display = 'block';
+        btnRegistro.style.display = 'none';
+        btnIncio.style.display = 'block';
+
+    })
+
+    btnIncio.addEventListener('click', ()=>{
+        form.style.display = 'block';
+        formRegistro.style.display='none';
+        btnIncio.style.display = 'none';
+        btnRegistro.style.display = 'block';
+    })
+
+
+
+
 }

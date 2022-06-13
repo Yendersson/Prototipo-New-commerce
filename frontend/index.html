@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style-acerca.css">
     <link rel="stylesheet" href="css/vender-style.css">
     <link rel="stylesheet" href="css/style-demo.css">
+    <link rel="stylesheet" href="css/reportarP.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +35,8 @@
 
     <section class="modal">
         <div class="modal-container modal-show">
+          <img src="img/protofinal (4).png" alt="">
           <form action="" id="form">
-            <img src="img/protofinal (4).png" alt="">
-            <!-- <h2>New-Commerce</h2> -->
             <div class="form-inicio">
               <label for="">Nombre o Usuario:</label>
               <input type="email" name="email" id="email" placeholder="Mail">
@@ -46,8 +46,25 @@
               <button class="btn-login" id="btn-login">Iniciar Sesion</button>
               <span id="alerta" style="color: red; text-align:center"></span>
             </div>
-            <button class="btn-register">Registrate</button>
           </form>
+          <button class="btn-register" id="register">Registrate</button>
+
+          <form id="form-register">
+            <div class="form-inicio">
+              <label for="">Nombre:</label>
+              <input type="text" name="name" id="name" placeholder="nombre de usuario">
+              <label for="">Correo:</label>
+              <input type="email" name="email" id="emailR" placeholder="Mail">
+              <!-- <span id="alerta" style="color: red; text-align:center"></span> -->
+              <label for="">Contraseña:</label>
+              <input type="password" name="password" id="passwordR" placeholder="******">
+  
+              <button class="btn-login" id="btn-register">Registarse</button>
+              <!-- <span id="alerta" style="color: red; text-align:center"></span> -->
+            </div>
+          </form>
+          <button class="btn-register" id="login">Ya tienes cuenta?</button>
+
           <a href="#" id="close">Close</a>
         </div>
       </section>
@@ -74,6 +91,7 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
     <script src="js/script.js"></script>
     <script src="js/ajax.js"></script>
 </body>
