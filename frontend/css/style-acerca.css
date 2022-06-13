@@ -2,176 +2,54 @@
 /* ================================================== MAIN ===================================================== */
 /* ============================================================================================================== */
 
-/* CELULARES */
-
-
-/* @media (min-width: 370px) {
-    .intro h1 {
-        padding-top: 25px;
-         font-size: 50px;
-    }
-    .intro {
-        display:flex;
-        flex-direction: column;
-        font-size:17px;
-        
-        
-    }
-
-    .intro-central {
-         padding: 20px 50px 30px 50px;
-    }
-    .intro-izq {
-        width: 320px;
-        padding:20px 100px 20px 20px;
-        margin-top: 40px;
-
-    }
-    .img-1 img {
-        width: 240px;
-        height:auto;
-        position: relative;
-    top: -360px;
-    left: -50px;
-    }
-    .img-2 img {
-        width: 150px;
-         height:auto;
-         position: relative;
-         top: -290px;
-         right: -80px;
-        
-    }
-
-}
-@media (min-width: 570px) {
-    .intro h1 {
-        padding-top: 25px;
-         font-size: 50px;
-    }
-    .intro {
-        display:flex;
-        flex-direction: column;
-        font-size:17px;
-        
-        
-    }
-
-    .intro-central {
-         padding: 20px 80px 55px 80px;
-    }
-    .intro-izq {
-        width: 350px;
-        padding:40px 60px 20px 60px;
-
-    }
-    .img-1 img {
-        width: 300px;
-        height:auto;
-        position: relative;
-    top: -320px;
-    left: -90px;
-    }
-    .img-absolute img {
-        width: 240px;
-         height:auto;
-         position: absolute;
-    top: 510px;
-    right: 10px;
-        
-    }
-}  */
-
-
-
-/* TABLETS */
-/* @media (min-width: 768px) {
-    .intro {
-        width: 700px;
-        padding: 50px; 
-        text-align: center;
-        background-color: red;
-    }
-    
-   .intro h1 {
-        padding-bottom: 30px;
-         font-size: 60px;
-    } 
-    
-    .intro-central {
-        width: 700px;
-        padding: 50px; 
-    }
-    .intro-izq {
-        width: 700px;
-        padding: 50px; 
-    }
-    
-    .img-1 {
-        position: relative;
-        top: -25px;
-        left: -400px;
-    } 
-    
-    
-    .img-2 img {
-        width: 150px;
-         height:auto;
-         position: relative;
-         top: -290px;
-         right: -80px;
-        
-    }
-} */
-
-
 
 /* COMPUTADORAS */
+
 .intro_acerca {
-    width: 700px;  
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   padding-top: 100px;
-   align-items: center;
-   background-image: linear-gradient(#FF7D1B, #ffe11b);
-   position: relative;
-  
+   width: 700px;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+  background-image: linear-gradient(#FF7D1B, #ffe11b);
+  position: relative;
+ 
 }
 
 .intro_acerca h1 {
-   padding-bottom: 30px;
-    font-size: 50px;
+  padding-bottom: 30px;
+   font-size: 50px;
 } 
 
 .intro_acerca p {
-   width: 650px;
-   font-size: 25px;
+  width: 650px;
+  font-size: 25px;
 }
 
 .intro-2_acerca {
-   padding-top: 80px;
+  padding-top: 80px;
 }
 .img-1_acerca {
-   position: absolute;
-   top: 48%;
-   right: 70%;
+  position: absolute;
+  top: 48%;
+  right: 70%;
 } 
 
 .img-1_acerca img {
-   width: 320px;
-   height: auto;
+  width: 320px;
+  height: auto;
 }
 .img-2_acerca {
-   position: absolute;
-   top:36%;
-   left: 74%;
+  position: absolute;
+  top:36%;
+  left: 74%;
 }
 
 
 .img-2_acerca img {
-   width: 255px;
-   height: auto;
+  width: 255px;
+  height: auto;
 }
 
 
@@ -209,11 +87,11 @@ background-image: linear-gradient( #ffe11b, #FF7D1B);
 */
 
 .perfiles_acerca {
-   background-image: linear-gradient( #ffe11b, #FF7D1B);
-   width: 100%;
-   height: auto;
-   display: flex;
-   justify-content: center;
+  background-image: linear-gradient( #ffe11b, #FF7D1B);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 .container-perfiles_acerca {
 width: 85%;
@@ -324,43 +202,19 @@ font-size: 25px;
 padding-top: 40px;
 }
 
-.logo-pescar_acerca {
+.logos_acerca {
 padding: 5px;
 transition: all 0.3s;
-}
-
-.logo-pescar_acerca:hover {
-
-padding: 0;
-transition: all 0.3s;
-}
-
-.logo-jp_acerca {
-padding: 5px;
-transition: all 0.3s;
-width: 380px;
 height: auto;
-
 }
-.logo-jp_acerca:hover {
+.logos_acerca:hover {
 padding: 0;
 transition: all 0.3s;
-width: 390px;
 height: auto;
-
 }
 
-.logo-loma_acerca {
 
-padding: 5px;
-transition: all 0.3s;
-}
 
-.logo-loma_acerca:hover {
-
-padding: 0;
-transition: all 0.3s;
-}
 
 .section-flex-row_acerca {
 display: flex;
@@ -461,18 +315,14 @@ background-color: white;
 
 .card_acerca {
 position: relative;
-width: 270px;
-height: 310px;
+
 font-weight: 300;
-padding: 10px;
+
 text-align: center;
 
 
 }
-.card_acerca p {
-font-size: 16px;
 
-}
 .card_acerca .face {
 position: absolute;
 width: 100%;
@@ -494,7 +344,7 @@ align-items: center;
 
 .card_acerca .front h3 {
 position: absolute;
-font-size: 22px;
+
 
 }
 
@@ -502,7 +352,7 @@ font-size: 22px;
 transform: perspective(600px) rotateY(180deg);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.464) ;
 padding: 20px;
-line-height: 22px;
+
 text-align: center;
 display: flex;
 justify-content: center;
@@ -554,238 +404,293 @@ transition: all 0.4s;
 @media (min-width: 360px) {
 
 .container-perfiles_acerca {
-   grid-template-columns: auto;
-   gap: 0% 0%; 
+  grid-template-columns: auto;
+  gap: 0% 0%; 
 }
 
 .perfil_acerca {
-   width: 300px;
+  width: 300px;
 height: auto;
 margin:10px;
 }
 .container-perfiles_acerca h2 {
-   font-size: 18px;
-   margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 .redes_acerca img {
-   width: 40px;
-   height: auto;
-  padding: 5px;
+  width: 40px;
+  height: auto;
+ padding: 5px;
 
- } 
- 
- .redes_acerca img:hover {
-   width: 35px;
-   
-  
 } 
- .imagen-perfil_acerca {
-     width: 50%;
- }
+
+.redes_acerca img:hover {
+  width: 40px;
+  
+ 
+} 
+.imagen-perfil_acerca {
+    width: 50%;
+}
 
 
 .vision_acerca {
-   height: auto;
+  height: auto;
 }
 .vision_acerca div {
 
-   width: auto;
-   height: 600px;
- 
+  width: auto;
+  height: 600px;
+
 }
 .vision_acerca p {
-   font-size: 13px;
-   margin: 0px 20px 0px 20px;
+  font-size: 14px;
+  margin: 0px 20px 0px 20px;
 }
 .vision_acerca h2 {
-   font-size: 22px;
+  font-size: 22px;
 }
 
 
 
 .fondo-1_acerca {
-  
-   background-position: 296px 0px;
  
+  background-position: 296px 0px;
+
 }
 
 .fondo-2_acerca {
-  
-   background-position: -113px 0px;
+ 
+  background-position: -113px 0px;
 }
-
-
-
-
-
-
 
 
 
 
 
 .section-pescar_acerca p {
-   font-size: 18px;
+  font-size: 15px;
 }
 
 .logo-pescar_acerca {
-   width: 190px;
+  width: 190px;
 }
 .logo-pescar_acerca:hover {
-   width: 200px;
+  width: 200px;
 }
 .logo-jp_acerca {
-   width: 245px;
+  width: 186px;
 }
 .logo-jp_acerca:hover {
-   width: 255px;
+  width: 186px;
 }
 .logo-loma_acerca {
-   width: 110px;
+  width: 85px;
 }
 .logo-loma_acerca:hover {
-   width: 120px;
+  width: 85px;
 }
-
+.logo-mecenazgo_acerca {
+  width: 70px;
+ 
+}
+.logo-mecenazgo_acerca:hover {
+  width: 70px;
+  
+}
 
 
 
 
 .intro_acerca {
-   display:inline-block;
-   height: auto;
+  display:inline-block;
+  height: auto;
 }
 .intro_acerca p {
-   font-size: 15px;
-   width: 85%;
-   padding: 5px;
-   margin: 0 auto;
+  font-size: 15px;
+  width: 85%;
+  padding: 5px;
+  margin: 0 auto;
 }
 .intro_acerca h1 {
-   font-size: 33px;
+  font-size: 33px;
 }
 
 
 .img-1_acerca {
-   top: 53%;
-   right: 38%;
+  top: 53%;
+  right: 38%;
 } 
 
 .img-1_acerca img {
-   width: 221px;
+  width: 221px;
 
 }
 .img-2_acerca {
-   top:76%;
-   left: 60%;
+  top:71%;
+  left: 60%;
 }
 
 
 .img-2_acerca img {
-   width: 140px;
- 
+  width: 140px;
+
 }
 
 .intro-2_acerca p {
-   width: 55%;
-   margin: 5px 0 0 23px;
-}
+  width: 55%;
+  margin: 5px 0 0 23px;
 }
 
+
+
+.mision_acerca {
+  flex-direction: column;
+  height: 690px;
+}
+
+
+
+
+
+
+.card_acerca {
+
+width: 190px;
+height: 210px;
+
+
+
+
+}
+.card_acerca p {
+font-size: 13px;
+
+}
+
+.card_acerca .back {
+
+padding: 15px;
+line-height: 15px;
+}
+.card_acerca .front h3 {
+
+font-size: 16px;
+
+}
+
+}
 
 
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 480PX =================================== */
 @media (min-width: 480px) {
 
 .container-perfiles_acerca {
-   grid-template-columns: auto;
+  grid-template-columns: auto;
 }
 
 .perfil_acerca {
-   width: 300px;
+  width: 300px;
 height: auto;
 }
 .container-perfiles_acerca h2 {
-   font-size: 18px;
-   
+  font-size: 18px;
+  
 }
 
 
- .imagen-perfil_acerca {
-     width: 50%;
- }
+.imagen-perfil_acerca {
+    width: 50%;
+}
 
 
 
 .vision_acerca p {
-   font-size: 14px;
-   
+  font-size: 16px;
+  
 }
 .vision_acerca h2 {
-   font-size: 24px;
+  font-size: 24px;
 }
 
-.section-pescar_acerca p {
-   font-size: 18px;
-}
 
-.logo-pescar_acerca {
-   width: 190px;
-}
-.logo-pescar_acerca:hover {
-   width: 200px;
-}
-.logo-jp_acerca {
-   width: 245px;
-}
-.logo-jp_acerca:hover {
-   width: 255px;
-}
-.logo-loma_acerca {
-   width: 110px;
-}
-.logo-loma_acerca:hover {
-   width: 120px;
-}
+
+
 
 
 .intro_acerca {
-   display:inline-block;
+  display:inline-block;
 }
 .intro_acerca p {
-   font-size: 18px;
-   width: 85%;
-   margin: 0 auto;
+  font-size: 17px;
+  width: 85%;
+  margin: 0 auto;
 }
 .intro_acerca h1 {
-   font-size: 40px;
+  font-size: 40px;
 }
 
 
 .img-1_acerca {
-   top: 48%;
-   right: 43%;
+  top: 51%;
+  right: 43%;
 } 
 
 .img-1_acerca img {
-   width: 273px;
+  width: 273px;
 
 }
 .img-2_acerca {
-   top:64%;
-   left: 60%;
+  top:64%;
+  left: 60%;
 }
 
 
 .img-2_acerca img {
-   width: 183px;
- 
+  width: 183px;
+
 }
 
 .intro-2_acerca p {
-   width: 55%;
-   margin: 27px 0 0 23px;
+  width: 55%;
+  margin: 27px 0 0 23px;
 }
+
+
+
+
+
+
+.section-pescar_acerca p {
+  font-size: 17px;
+}
+.logo-pescar_acerca {
+  width: 190px;
+}
+.logo-pescar_acerca:hover {
+  width: 198px;
+}
+.logo-jp_acerca {
+  width: 196px;
+}
+.logo-jp_acerca:hover {
+  width: 196px;
+}
+.logo-loma_acerca {
+  width: 95px;
+}
+.logo-loma_acerca:hover {
+  width: 95px;
+}
+.logo-mecenazgo_acerca {
+  width: 80px;
+ 
+}
+.logo-mecenazgo_acerca:hover {
+  width: 80px;
+
+}
+
 }
 
 
@@ -804,80 +709,140 @@ height: auto;
 @media (min-width: 570px) {
 
 .container-perfiles_acerca {
-   grid-template-columns: auto;
-   
+  grid-template-columns: auto;
+  
 }
-   .container-perfiles_acerca h2 {
-       font-size: 20px;
-   
-   }
+  .container-perfiles_acerca h2 {
+      font-size: 20px;
+  
+  }
 
 .intro_acerca {
-   display:inline-block;
-   height: 670px;
+  display:inline-block;
+  height: 670px;
 }
 .intro_acerca p {
-   font-size: 18px;
-   width: 85%;
-   padding: 5px;
-   margin: 0 auto;
+  font-size: 18px;
+  width: 85%;
+  padding: 5px;
+  margin: 0 auto;
 }
 .intro_acerca h1 {
-   font-size: 40px;
+  font-size: 40px;
 }
 
 
 .img-1_acerca {
-   top: 43%;
-   right: 48%;
+  top: 45%;
+  right: 48%;
 } 
 
 .img-1_acerca img {
-   width: 273px;
+  width: 273px;
 
 }
 .img-2_acerca {
-   top:58%;
-   left: 60%;
+  top:58%;
+  left: 60%;
 }
 
 
 .img-2_acerca img {
-   width: 183px;
- 
+  width: 183px;
+
 }
 
 .intro-2_acerca p {
-   width: 55%;
-   margin: 27px 0 0 23px;
+  width: 55%;
+  margin: 27px 0 0 23px;
 }
 
 
 
 
 .fondo-1_acerca {
-  
-   background-position: 358px 0px;
  
+  background-position: 358px 0px;
+
 }
 
 .fondo-2_acerca {
-  
-   background-position: -60px 0px;
+ 
+  background-position: -60px 0px;
 }
 
 .vision_acerca p {
-   font-size: 15px;
-   
+  font-size: 17px;
+  
 }
 .vision_acerca h2 {
-   font-size: 25px;
+  font-size: 25px;
 }
-}
-
-
 
   
+.card_acerca {
+
+width: 215px;
+height: 250px;
+
+margin: 30px;
+
+
+}
+.card_acerca p {
+font-size: 15px;
+
+}
+
+.card_acerca .back {
+
+padding: 15px;
+line-height: 15px;
+}
+.card_acerca .front h3 {
+
+font-size: 16px;
+
+}
+
+.mision_acerca {
+flex-direction: row;
+height: 575px;
+}
+
+
+
+.section-pescar_acerca p {
+font-size: 18px;
+}
+
+.logo-jp_acerca {
+width: 245px;
+}
+.logo-jp_acerca:hover {
+width: 245px;
+}
+.logo-loma_acerca {
+width: 110px;
+}
+.logo-loma_acerca:hover {
+width: 110px;
+}
+.logo-mecenazgo_acerca {
+width: 95px;
+
+}
+.logo-mecenazgo_acerca:hover {
+width: 95px;
+
+}
+
+}
+
+
+
+
+ 
 
 
 
@@ -886,85 +851,136 @@ height: auto;
 @media (min-width: 670px) {
 
 .imagen-perfil_acerca {
-   width: 55%;
+  width: 55%;
 }
 
 .redes_acerca img {
-   width: 42px;
-   height: auto;
-  padding: 5px;
+  width: 42px;
+  height: auto;
+ padding: 5px;
 
- } 
- 
- .redes_acerca img:hover {
-   width: 37px;
-   
-  
 } 
- .container-perfiles_acerca h2 {
-   font-size: 21px;
+
+.redes_acerca img:hover {
+  width: 42px;
+  
+ 
+} 
+.container-perfiles_acerca h2 {
+  font-size: 21px;
 
 }
 
 .intro_acerca {
-   display:inline-block;
-   height: 700px;
+  display:inline-block;
+  height: 700px;
 }
 .intro_acerca p {
-   font-size: 21px;
-   width: 85%;
-   padding: 5px;
-   margin: 0 auto;
+  font-size: 19px;
+  width: 85%;
+  padding: 5px;
+  margin: 0 auto;
 }
 .intro_acerca h1 {
-   font-size: 43px;
+  font-size: 43px;
 }
 
 
 .img-1_acerca {
-   top: 44%;
-   right: 53%;
+  top: 44%;
+  right: 53%;
 } 
 
 .img-1_acerca img {
-   width: 296px;
+  width: 296px;
 
 }
 .img-2_acerca {
-   top:62%;
-   left: 69%;
+  top:57%;
+  left: 69%;
 }
 
 
 .img-2_acerca img {
-   width: 204px;
- 
+  width: 204px;
+
 }
 
 .intro-2_acerca p {
-   width: 65%;
-   margin: 42px 0 0 23px;
+  width: 65%;
+  margin: 42px 0 0 23px;
 }
 
 
 .fondo-1_acerca {
-  
-   background-position: 388px 0px;
  
+  background-position: 388px 0px;
+
 }
 
 .fondo-2_acerca {
-  
-   background-position: -25px 0px;
+ 
+  background-position: -25px 0px;
 }
 
 .vision_acerca p {
-   font-size: 16px;
-   
+  font-size: 18px;
+  
 }
 .vision_acerca h2 {
-   font-size: 26px;
+  font-size: 26px;
 }
+
+
+
+
+      
+.card_acerca {
+
+width: 225px;
+height: 275px;
+
+margin: 30px;
+
+
+}
+.card_acerca p {
+font-size: 16px;
+
+}
+
+.card_acerca .back {
+
+padding: 15px;
+line-height: 18px;
+}
+.card_acerca .front h3 {
+
+font-size: 18px;
+
+}
+
+.mision_acerca {
+
+height: 600px;
+}
+
+
+
+
+
+
+.section-pescar_acerca p {
+font-size: 19px;
+}
+.logo-pescar_acerca {
+width: 210px;
+}
+.logo-pescar_acerca:hover {
+width: 220px;
+}
+
+
 }
 
 
@@ -973,43 +989,43 @@ height: auto;
 @media (min-width: 768px) {
 
 .container-perfiles_acerca {
-   grid-template-columns: auto auto;
-   gap: 0% 10%; 
+  grid-template-columns: auto auto;
+  gap: 0% 10%; 
 }
 
 .container-perfiles_acerca h2 {
-   font-size: 22px;
+  font-size: 22px;
 
 }
 .imagen-perfil_acerca {
-   width: 60%;
+  width: 60%;
 }
 .redes_acerca img {
-   width: 44px;
-   height: auto;
-  padding: 5px;
+  width: 44px;
+  height: auto;
+ padding: 5px;
 
- } 
+} 
 
- .redes_acerca img:hover {
-   width: 39px;
-   
+.redes_acerca img:hover {
+  width: 44px;
   
+ 
 } 
 
 
 .vision_acerca div {
 
-   width: auto;
-   height: 680px;
+  width: auto;
+  height: 680px;
 }
 .intro_acerca h1 {
-  padding-bottom: 30px;
-   font-size: 14px;
+ padding-bottom: 30px;
+  font-size: 14px;
 } 
 
 .fondo-1_acerca {
-  
+ 
 background-position: 0px 0px;
 
 }
@@ -1020,7 +1036,7 @@ background-position: 0px 0px;
 }
 
 .vision_acerca p {
-font-size: 18px;
+font-size: 20px;
 
 }
 .vision_acerca h2 {
@@ -1033,7 +1049,7 @@ font-size: 28px;
 
 
 .intro_acerca p {
-font-size: 23px;
+font-size: 21px;
 width: 85%;
 padding: 5px;
 margin: 0 auto;
@@ -1053,8 +1069,8 @@ width: 326px;
 
 }
 .img-2_acerca {
-top:62%;
-left: 69%;
+top:59%;
+left: 71%;
 }
 
 
@@ -1067,7 +1083,71 @@ width: 214px;
 width: 68%;
 margin: 42px 0 0 23px;
 }
+
+
+
+.card_acerca {
+
+width: 215px;
+height: 310px;
+
+margin: 15px;
+
+
 }
+
+
+.card_acerca .back {
+
+padding: 15px;
+line-height: 20px;
+}
+
+
+.mision_acerca {
+
+height: 380px;
+}
+
+
+
+
+
+
+.section-pescar_acerca p {
+font-size: 21px;
+}
+.logo-pescar_acerca {
+width: 215px;
+}
+.logo-pescar_acerca:hover {
+width: 225px;
+}
+
+.logo-jp_acerca {
+width: 270px;
+}
+.logo-jp_acerca:hover {
+width: 270px;
+}
+.logo-loma_acerca {
+width: 120px;
+}
+.logo-loma_acerca:hover {
+width: 120px;
+}
+.logo-mecenazgo_acerca {
+width: 105px;
+
+}
+.logo-mecenazgo_acerca:hover {
+width: 105px;
+
+}
+}
+
+
+      
 
 
 
@@ -1078,73 +1158,131 @@ margin: 42px 0 0 23px;
 @media (min-width: 1024px) {
 
 .container-perfiles_acerca {
-   grid-template-columns: auto auto auto;
-   gap: 2% 2%;
+  grid-template-columns: auto auto auto;
+  gap: 2% 2%;
 }
 
 
 
-  .intro_acerca h1 {
-      padding-bottom: 30px;
-       font-size: 50px;
-  } 
+ .intro_acerca h1 {
+     padding-bottom: 30px;
+      font-size: 50px;
+ } 
 
 
 
 .intro_acerca p {
-   font-size: 24px;
-   width: 70%;
-   padding: 5px;
-   margin: 0 auto;
+  font-size: 24px;
+  width: 70%;
+  padding: 5px;
+  margin: 0 auto;
 }
 .intro_acerca h1 {
-   font-size: 50px;
+  font-size: 50px;
 }
 
 
 .img-1_acerca {
-   top: 42%;
-   right: 64%;
+  top: 45%;
+  right: 64%;
 } 
 
 .img-1_acerca img {
-   width: 321px;
+  width: 321px;
 
 }
 .img-2_acerca {
-   top:36%;
-   left: 79%;
+  top:38%;
+  left: 80%;
 }
 
 
 .img-2_acerca img {
-   width: 209px;
- 
+  width: 200px;
+
 }
 
 .intro-2_acerca p {
-   width: 70%;
-   margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .fondo-1_acerca {
-  
-   background-position: 100% 100%;
  
+  background-position: 100% 100%;
+
 }
 
 .fondo-2_acerca {
-  
-   background-position: 100% 100%;
+ 
+  background-position: 100% 100%;
 }
 
 .vision_acerca p {
-   font-size: 20px;
-   
+  font-size: 20px;
+  
 }
 .vision_acerca h2 {
-   font-size: 30px;
+  font-size: 30px;
 }
+
+
+.card_acerca {
+
+  width: 260px;
+ 
+}
+
+
+.card_acerca .back {
+
+
+  line-height: 22px;
+}
+
+.card_acerca p {
+font-size: 17px;
+
+}
+
+.card_acerca .front h3 {
+
+font-size: 20px;
+
+}
+
+
+.section-pescar_acerca p {
+font-size: 21px;
+}
+.logo-pescar_acerca {
+width: 225px;
+}
+.logo-pescar_acerca:hover {
+width: 235px;
+}
+
+.logo-jp_acerca {
+width: 280px;
+}
+.logo-jp_acerca:hover {
+width: 280px;
+}
+.logo-loma_acerca {
+width: 130px;
+}
+.logo-loma_acerca:hover {
+width: 130px;
+}
+.logo-mecenazgo_acerca {
+width: 115px;
+
+}
+.logo-mecenazgo_acerca:hover {
+width: 115px;
+
+}
+
 
 
 }
@@ -1168,117 +1306,144 @@ margin: 42px 0 0 23px;
 @media (min-width: 1200px) {
 
 .container-perfiles_acerca {
-   
-   gap: 1% 8%;
+  
+  gap: 1% 8%;
 }
 
 .container-perfiles_acerca h2 {
-   font-size: 23px;
+  font-size: 23px;
 
 }
 .imagen-perfil_acerca {
-   width: 63%;
+  width: 63%;
 }
 
 .redes_acerca img {
-   width: 46px;
-   height: auto;
-  padding: 5px;
+  width: 46px;
+  height: auto;
+ padding: 5px;
 
- } 
- .redes_acerca img:hover {
-   width: 42px;
-   
-  
 } 
-       .vision_acerca div {
-       width: auto;
-   }
-   
-
-
-   .section-pescar_acerca p {
-       
-       font-size: 23px;
-   }
-
-
-
-   .logo-pescar_acerca {
-       width: 250px;
-       height: auto;
-
-   }
+.redes_acerca img:hover {
+  width: 46px;
   
-   .logo-pescar_acerca:hover {
-       width: 260px;
-       height: auto;
-   }
-   
+ 
+} 
+      .vision_acerca div {
+      width: auto;
+  }
+  
 
 
-
-   .logo-jp_acerca {
-     
-       width: 335px;
-       height: auto;
-       
-   }
-   .logo-jp_acerca:hover {
-       
-       width: 350px;
-       height: auto;
-       
-   }
-
-
-   .logo-loma_acerca {
-       width: 140px;
-       height: auto;
-     
-   }
-   
-   .logo-loma_acerca:hover {
-       width: 145px;
-       height: auto;
+  .section-pescar_acerca p {
       
-   }
+      font-size: 24px;
+  }
 
 
-   .vision_acerca p {
-       font-size: 22px;
-       
-   }
-   .vision_acerca h2 {
-       font-size: 32px;
-   }
-   
-   .intro_acerca p {
-       width: 65%;
-       font-size: 25px;
-   }
-   
-   .img-1_acerca {
-       
-       top: 44%;
-       right: 69%;
-   } 
-   
-   .img-1_acerca img {
-       width: 333px;
-       height: auto;
-   }
-   .img-2_acerca {
-       
-       top:32%;
-       left: 78%;
-   }
-   
-   
-   .img-2_acerca img {
-       width: 240px;
-       height: auto;
-   }
+
+  .logo-pescar_acerca {
+      width: 250px;
+  }
+ 
+  .logo-pescar_acerca:hover {
+      width: 260px;
+  }
+  
+  .logo-jp_acerca {
+    
+      width: 335px;
+     
+      
+  }
+  .logo-jp_acerca:hover {
+      
+      width: 335px;
+  
+      
+  }
+
+
+  .logo-loma_acerca {
+      width: 140px;
+     
+    
+  }
+  
+  .logo-loma_acerca:hover {
+      width: 140px;
+      
+     
+  }
+  .logo-mecenazgo_acerca {
+      width: 125px;
+     
+  }
+  .logo-mecenazgo_acerca:hover {
+      width: 125px;
+     
+  }
+
+
+
+
+  .vision_acerca p {
+      font-size: 22px;
+      
+  }
+  .vision_acerca h2 {
+      font-size: 32px;
+  }
+  
+  .intro_acerca p {
+      width: 65%;
+      font-size: 24px;
+  }
+  
+  .img-1_acerca {
+      
+      top: 44%;
+      right: 69%;
+  } 
+  
+  .img-1_acerca img {
+      width: 333px;
+      height: auto;
+  }
+  .img-2_acerca {
+      
+      top:32%;
+      left: 78%;
+  }
+  
+  
+  .img-2_acerca img {
+      width: 240px;
+      height: auto;
+  }
+
+
+
+
+  
+.card_acerca {
+
+  width: 270px;
+ 
+}
+
+
+.card_acerca p {
+font-size: 18px;
+
+}
+
+.card_acerca .front h3 {
+
+font-size: 22px;
+
+}
+
 }   
 
 
@@ -1288,7 +1453,7 @@ margin: 42px 0 0 23px;
 
 .intro_acerca p {
 max-width: 800px;
-font-size: 25px;
+
 }
 
 .img-1_acerca {
