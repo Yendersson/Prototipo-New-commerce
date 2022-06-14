@@ -202,7 +202,7 @@ function handle(datos){
     let compilar = Handlebars.compile(plantilla);
     document.querySelector('#template-compilado').innerHTML = compilar(datos);
     productos()
-    banner()
+    // banner()
 
 }
 
@@ -231,7 +231,7 @@ function datos(id){
                 faq()
                 bienvenida()
                 modalCarrito()
-                // banner()
+                banner()
                 
             }
         })
