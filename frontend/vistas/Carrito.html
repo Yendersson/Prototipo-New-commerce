@@ -18,23 +18,86 @@
 
       <div id="prueba-producto">
           <img src="icons/compra.png" class="imgCarrito">
-          <h3 id="producto1">-----</h3>
-          <h3 id="cantidad1">------</h3>
-          <h3 id="precio1">-------</h3>
+          <h3 id="producto1">Camisa de Cuadros</h3>
+          <h3 id="cantidad1">1</h3>
+          <h3 id="precio1">3500 $</h3>
       </div>
-      <div id="segunda-columna">
+      <!-- <div id="segunda-columna">
           <img src="icons/compra.png" class="imgCarrito">
           <h3 id="producto2">.....</h3>
           <h3 id="cantidad2">......</h3>
           <h3 id="precio2">........</h3>
-      </div>
+      </div> -->
       <div id="final">
           <button class="boton1 btnCarrito">seguir comprando</button>
-          <h2 id="precio-total">total</h2>
-          <button class="boton2 btnCarrito">continuar</button>
+          <h2 id="precio-total">total: 3500 $</h2>
+          <button class="boton2 btnCarrito" id="compra">continuar</button>
           <button type="button" > <img src="icons/basura.png" class="eliminar"  >
           </button>
       </div>
   </div>
+
+  <div class="Pago-carrito-carrito">
+    <div class="popop-carrito">
+          <!-- <a id="cerrar-carrito" href="#popop">&times;</a> -->
+      <h1>
+        Proceso de Compra
+      </h1>
+      <p class="Parrafo-Donacion-carrito">
+        Metodo de Pago
+        <select name="porsentaje">
+        <option value="Visa" selected>Credito</option>
+        <option value="Mastercard" selected>Debito</option>
+      </select>
+      </p>
+      <h4>
+        Numero de tarjeta
+      </h4>
+      </p>
+      <div class="contenedor-carrito">
+        <input type="text" placeholder="Tarjeta">
+        <h4>
+          Entidad bancaria
+        </h4>
+        <input type="text" placeholder="Entidad">
+        <h4>
+          Nombre de titular
+        </h4>
+        <input type="text" placeholder="Nombre">
+      <div class="codigo-carrito">
+        <h4>
+          Codigo de seguridad
+        </h4>
+        <input type="text" placeholder="Codigo">
+        <h4>
+          Fecha de vencimiento
+        </h4>
+        <input type="text" placeholder="MM/AA">
+      </div>  
+    <h4>
+      <h4>
+        DNI del titular
+      </h4>
+      <input type="text" placeholder="DNI">
+    </h4>
+    <p class="Parrafo-Donacion-carrito">
+    Con tu compra se donará un 10% a la ONG que selecciones
+    <select name="" id="">
+        <option value="">1</option>
+    <option value="">2</option>
+    </select>
+    
+    </p>
+    
+    <div>
+      <button class="btn-comprar-carrito" id="comprado">
+        <span>Comprar</span>
+      </button>
+      <a href="#" id="cerrar">cerrar</a>
+    </div>
+    </p>
+    </div>
+  </div>
+</div>
 
  

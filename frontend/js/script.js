@@ -1,6 +1,7 @@
 // MOBILE MENU VARIABLES
 
 function botons(){
+// MOBILE MENU VARIABLES
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
 const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
@@ -51,11 +52,54 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
     });
 }
+
+}
+
+function banner(){
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+//  NEXT/PREVIOUS
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// THUMBNAIL IMAGE CONTROL
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("Banner");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+/**
+ * back to top
+ */
+
+ const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+ window.addEventListener("scroll", function () {
+   window.scrollY >= 100 ? backTopBtn.classList.add("active"): backTopBtn.classList.remove("active");
+ });
+
 }
 
 
 //NAVIGATIONS
-function cargar(url, etiqueta, adicional, adicional1){
+function cargar(url, etiqueta, adicional, adicional1, adicional2){
     let xhr = ajax(url);
     xhr.addEventListener('load', ()=>{
         if(xhr.status == 200){
@@ -66,6 +110,9 @@ function cargar(url, etiqueta, adicional, adicional1){
             if(adicional1){
                 adicional1()
             }
+            if(adicional2){
+                adicional2()
+            }
         }
     })
 }
@@ -75,6 +122,8 @@ function navegar(){
     modal()
     filtro()
     input()
+    // carrito()
+    // banner()
     const links = document.querySelectorAll('.select');
     console.log(links)
 
@@ -88,6 +137,7 @@ function navegar(){
                 if(xhr.status == 200){
                     _main.innerHTML = xhr.response;
                     datos()
+                    // banner()
                     
                     // productos()
                     // handle()
@@ -96,7 +146,6 @@ function navegar(){
         })
     });
 }
-
 
 function productos(){
     const articulos = document.querySelectorAll('.busqueda-articulo-desktop');
@@ -118,11 +167,42 @@ function productos(){
 
 }
 
+function modalCarrito(){
+
+        let modal = document.getElementById('compra');
+        modal.addEventListener('click', ()=>{
+            console.log('botoon');
+            document.querySelector('.Pago-carrito-carrito').classList.add('show');
+        })
+
+        document.querySelector('#cerrar').addEventListener('click', (e)=>{
+            e.preventDefault()
+            document.querySelector('.Pago-carrito-carrito').classList.remove('show');
+
+        })
+
+        document.querySelector('#comprado').addEventListener('click', ()=>{
+            location.href = 'index.html'
+        })
+        
+        // document.querySelector('#close').addEventListener('click', (e)=>{
+        //     e.preventDefault();
+        //     document.querySelector('.modal').classList.remove('modal-show');
+        
+        // })
+        
+        // document.querySelector('#form').addEventListener('submit', (e)=>{
+        //     e.preventDefault()
+        // })
+        }
+
+
 function handle(datos){
     let plantilla = _main.innerHTML;
     let compilar = Handlebars.compile(plantilla);
     document.querySelector('#template-compilado').innerHTML = compilar(datos);
     productos()
+    banner()
 
 }
 
@@ -150,6 +230,9 @@ function datos(id){
                 handle(parseoJson);
                 faq()
                 bienvenida()
+                modalCarrito()
+                // banner()
+                
             }
         })
     }
@@ -214,10 +297,6 @@ function ajax(url, method = 'get'){
     xhr.send();
 
     return xhr;
-}
-
-function carrito(){
-// CARRITO
 }
 
 

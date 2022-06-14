@@ -3,8 +3,6 @@
 /* ============================================================================================================== */
 
 
-/* COMPUTADORAS */
-
 .intro_acerca {
    width: 700px;  
   text-align: center;
@@ -68,23 +66,19 @@ margin: 0;
 
 }
 
-/* ---PRIMER SECCIÓN---*/
+
 .intro_acerca {
 width: 100%;
-height: 730px; /*650px*/
-/* width: 700px; */
-/* padding: 50px; */
+height: 730px; 
+
 text-align: center;
 
 }
 
 
 
-/* ---SEGUNDA SECCIÓN PERFILES---*/
+/* ---SECCIÓN PERFILES---*/
 
-/* .profiles-section_acerca {
-background-image: linear-gradient( #ffe11b, #FF7D1B);
-*/
 
 .perfiles_acerca {
   background-image: linear-gradient( #ffe11b, #FF7D1B);
@@ -167,19 +161,7 @@ margin-bottom: 25px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---TERCERA SECCIÓN PESCAR-JP MORGAN---*/
+/* ---SECCIÓN PESCAR-JP MORGAN---*/
 .section-pescar_acerca {
 text-align: center;
 display: flex;
@@ -194,7 +176,7 @@ background-color: white;
 }
 
 .section-pescar_acerca div {
-width: 80%;
+width: 85%;
 font-size: 25px;
 }
 
@@ -223,17 +205,12 @@ justify-content: space-around;
 
 }
 
-/* ---CUARTA SECCIÓN PUMA---*/
+/* ---SECCIÓN VISION---*/
 
 .vision_acerca {
 width: 100%;
 height: 680px;
-/* display: grid;
-grid-template-columns: 50% 50% ;
-grid-template-rows: 350px;
-grid-row-gap:40px;
-grid-column-gap: 0;
-*/
+
 
 display: flex;
 
@@ -373,26 +350,6 @@ transition: all 0.7s;
 
 
 
-
-/* .vision_acerca button {
-width: 220px;
-height: 50px;
-background-color: #0f5cc8; 
-border-radius: 10px;
-color: white;
-font-weight: bold;
-margin-left: 250px;
-margin-top: 35px;
-transition: all 0.4s;
-}
-.vision_acerca button:hover {
-background-color: #2174d9; 
-transition: all 0.4s;
-} */
-
-
-
-
 /* ================================================================================================================ */
 /* ================================================== RESPONSIVE ================================================= */
 /* ============================================================================================================== */
@@ -444,7 +401,7 @@ margin:10px;
 
 }
 .vision_acerca p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0px 20px 0px 20px;
 }
 .vision_acerca h2 {
@@ -469,7 +426,7 @@ margin:10px;
 
 
 .section-pescar_acerca p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .logo-pescar_acerca {
@@ -507,7 +464,7 @@ margin:10px;
   height: auto;
 }
 .intro_acerca p {
-  font-size: 15px;
+  font-size: 13px;
   width: 85%;
   padding: 5px;
   margin: 0 auto;
@@ -518,7 +475,7 @@ margin:10px;
 
 
 .img-1_acerca {
-  top: 53%;
+  top: 48%;
   right: 38%;
 } 
 
@@ -546,7 +503,7 @@ margin:10px;
 
 .mision_acerca {
   flex-direction: column;
-  height: 690px;
+  height: 730px;
 }
 
 
@@ -556,15 +513,15 @@ margin:10px;
 
 .card_acerca {
 
-width: 190px;
-height: 210px;
+width: 180px;
+height: 200px;
 
 
 
 
 }
 .card_acerca p {
-font-size: 13px;
+font-size: 12px;
 
 }
 
@@ -606,7 +563,7 @@ height: auto;
 
 
 .vision_acerca p {
-  font-size: 16px;
+  font-size: 14px;
   
 }
 .vision_acerca h2 {
@@ -622,7 +579,7 @@ height: auto;
   display:inline-block;
 }
 .intro_acerca p {
-  font-size: 17px;
+  font-size: 15px;
   width: 85%;
   margin: 0 auto;
 }
@@ -632,7 +589,7 @@ height: auto;
 
 
 .img-1_acerca {
-  top: 51%;
+  top: 48%;
   right: 43%;
 } 
 
@@ -662,7 +619,7 @@ height: auto;
 
 
 .section-pescar_acerca p {
-  font-size: 17px;
+  font-size: 15px;
 }
 .logo-pescar_acerca {
   width: 190px;
@@ -696,14 +653,6 @@ height: auto;
 
 
 
-
-
-
-
-
-
-
-
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 570PX =================================== */
 
 @media (min-width: 570px) {
@@ -722,7 +671,7 @@ height: auto;
   height: 670px;
 }
 .intro_acerca p {
-  font-size: 18px;
+  font-size: 14px;
   width: 85%;
   padding: 5px;
   margin: 0 auto;
@@ -772,7 +721,7 @@ height: auto;
 }
 
 .vision_acerca p {
-  font-size: 17px;
+  font-size: 14px;
   
 }
 .vision_acerca h2 {
@@ -807,13 +756,13 @@ font-size: 16px;
 
 .mision_acerca {
 flex-direction: row;
-height: 575px;
+height: 620px;
 }
 
 
 
 .section-pescar_acerca p {
-font-size: 18px;
+font-size: 15px;
 }
 
 .logo-jp_acerca {
@@ -839,10 +788,6 @@ width: 95px;
 
 }
 
-
-
-
- 
 
 
 
@@ -876,7 +821,7 @@ width: 95px;
   height: 700px;
 }
 .intro_acerca p {
-  font-size: 19px;
+  font-size: 17px;
   width: 85%;
   padding: 5px;
   margin: 0 auto;
@@ -887,7 +832,7 @@ width: 95px;
 
 
 .img-1_acerca {
-  top: 44%;
+  top: 48%;
   right: 53%;
 } 
 
@@ -924,7 +869,7 @@ width: 95px;
 }
 
 .vision_acerca p {
-  font-size: 18px;
+  font-size: 16px;
   
 }
 .vision_acerca h2 {
@@ -962,7 +907,7 @@ font-size: 18px;
 
 .mision_acerca {
 
-height: 600px;
+height: 670px;
 }
 
 
@@ -971,7 +916,7 @@ height: 600px;
 
 
 .section-pescar_acerca p {
-font-size: 19px;
+font-size: 17px;
 }
 .logo-pescar_acerca {
 width: 210px;
@@ -1036,7 +981,7 @@ background-position: 0px 0px;
 }
 
 .vision_acerca p {
-font-size: 20px;
+font-size: 18px;
 
 }
 .vision_acerca h2 {
@@ -1049,7 +994,7 @@ font-size: 28px;
 
 
 .intro_acerca p {
-font-size: 21px;
+font-size: 18px;
 width: 85%;
 padding: 5px;
 margin: 0 auto;
@@ -1060,7 +1005,7 @@ font-size: 45px;
 
 
 .img-1_acerca {
-top: 43%;
+top: 48%;
 right: 54%;
 } 
 
@@ -1115,7 +1060,7 @@ height: 380px;
 
 
 .section-pescar_acerca p {
-font-size: 21px;
+font-size: 18px;
 }
 .logo-pescar_acerca {
 width: 215px;
@@ -1157,6 +1102,12 @@ width: 105px;
 
 @media (min-width: 1024px) {
 
+  .main_acerca {
+    margin-top: -20px;
+    
+  }
+
+
 .container-perfiles_acerca {
   grid-template-columns: auto auto auto;
   gap: 2% 2%;
@@ -1172,7 +1123,7 @@ width: 105px;
 
 
 .intro_acerca p {
-  font-size: 24px;
+  font-size: 20px;
   width: 70%;
   padding: 5px;
   margin: 0 auto;
@@ -1183,7 +1134,7 @@ width: 105px;
 
 
 .img-1_acerca {
-  top: 45%;
+  top: 48%;
   right: 64%;
 } 
 
@@ -1253,7 +1204,7 @@ font-size: 20px;
 
 
 .section-pescar_acerca p {
-font-size: 21px;
+font-size: 19px;
 }
 .logo-pescar_acerca {
 width: 225px;
@@ -1291,15 +1242,6 @@ width: 115px;
 
 
 
-
-
-
-
-
-
-
-
-
 /* =================================== RESPONSIVE FOR SCREENS LARGER THAN 1200PX =================================== */
 
 
@@ -1311,7 +1253,7 @@ width: 115px;
 }
 
 .container-perfiles_acerca h2 {
-  font-size: 23px;
+  font-size: 22px;
 
 }
 .imagen-perfil_acerca {
@@ -1337,7 +1279,7 @@ width: 115px;
 
   .section-pescar_acerca p {
       
-      font-size: 24px;
+      font-size: 20px;
   }
 
 
@@ -1388,7 +1330,7 @@ width: 115px;
 
 
   .vision_acerca p {
-      font-size: 22px;
+      font-size: 20px;
       
   }
   .vision_acerca h2 {
@@ -1397,7 +1339,7 @@ width: 115px;
   
   .intro_acerca p {
       width: 65%;
-      font-size: 24px;
+      font-size: 20px;
   }
   
   .img-1_acerca {
